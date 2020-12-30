@@ -1,0 +1,236 @@
+/* 
+
+  MENU AND HEADER MOBILE
+
+*/
+.header{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 44px;
+  width: 100%;
+  background-color: $white-podcast;
+
+  .logo{
+    margin: 10px 16px;
+    width: 24px;
+    height: 24px;
+    .img-logo{
+      width: 100%;
+      height: auto;
+    }
+    
+  }
+  .menu-box{
+    margin: 16px;
+    align-items: center;
+    
+    
+    #menu-drop{
+      height: 12px;
+      width: 20px;
+      visibility: hidden;
+      position: absolute;
+    }
+    #menu-drop:checked{
+      &~.label-menu{
+        .menu-bar{
+        visibility: hidden;
+        }
+        .menu-xtop, .menu-xbottom{
+          visibility: visible;
+        }
+      }
+      &~.list-menu{
+        visibility: visible;
+        height: 180px;
+        opacity: 1;
+        
+        .link-menu{
+          opacity: 1;
+          line-height: 28px;
+          
+          
+        }
+      }
+    }
+
+    .label-menu{
+
+      .menu-bar{
+        position: relative;
+        width: 18px;
+        height: 2px;
+        background-color: $black-text;
+        border-radius: 5px;
+        &::after,
+        &::before {
+          position: absolute;
+          display: block;
+          content: '';
+          width: 18px;
+          height: 2px;
+          background: $black-text;
+          top: 5px;
+          border-radius: 5px;
+        }
+        &::after{
+          top: 10px;
+        }
+      } 
+
+      .menu-xtop, .menu-xbottom{
+        visibility: hidden;
+        position: relative;
+        width: 14px;
+        height: 3px;
+        transform: skew(0, 45deg);
+        background-color: $black-text;
+        border-radius: 5px;
+      }
+      .menu-xbottom{
+        top: -3px;
+        transform: skew(0, -45deg);
+      }
+    }
+    .label-menu:hover{
+      cursor: pointer;
+    }
+
+
+    .list-menu{
+      position: absolute;
+      top: 44px;
+      left: 0;
+      visibility: hidden;
+      width: 100%;
+      background-color: $blue-podcast;
+      height: 0px;
+      opacity: 1;
+      transition: height 0.25s;
+    
+      .link-menu{
+        display: flex;
+        font-family: $font-mono;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 0px;
+        margin: 12px 16px 12px;
+        color: $white-podcast;
+        background-color: $blue-podcast;
+        font-weight: 300;
+        opacity: 0;
+        transition: opacity 1.5s;
+        -webkit-transition: opacity 1.5s;
+        
+        
+      }
+      :last-child{
+        margin-bottom: 16px;
+      }
+      .link-menu:hover{
+        color: $green-podcast;
+        text-decoration: line-through;
+      }
+      .link-menu:active{
+        color: $black-text;
+      }
+    }
+  }
+}
+
+/* 
+
+  END MENU AND HEADER MOBILE
+
+*/
+
+
+/* 
+
+  MENU AND HEADER TABLET
+
+*/
+@media (min-width:771px){
+
+  .header{
+    align-items: center;
+    height: 80px;
+    
+  
+    .logo{
+      margin: 22px 70px;
+      width: 36px;
+      height: 36px;
+      
+    }
+  
+    .menu-box{
+      display: flex;
+      margin: 0;     
+    
+      #menu-drop{
+        display: none;
+      }
+  
+      .label-menu{
+        display: none;
+        
+      }
+  
+      .list-menu{
+        position: relative;
+        top: 0;
+        visibility: visible;
+        background-color: $white-podcast;
+        display: flex;
+        height: 80px;
+      
+        .link-menu{
+          position: relative;
+          line-height: 28px;
+          margin: 20px 18px;
+          color: $black-text;
+          background-color: $white-podcast;
+          opacity: 1;
+          
+        }
+        :last-child{
+          margin-right: 35px;
+  
+        }
+      }
+    }
+  }
+  /* 
+  
+    END MENU AND HEADER TABLET
+  
+  */
+
+  /* 
+
+    MENU AND HEADER DESKTOP
+
+  */
+
+  @media (min-width: 1440px) {
+
+    .header .logo {
+      margin: 22px 100px;
+    }
+    .header .menu-box .list-menu .link-menu {
+      margin: 26px 24px;
+    }
+    .header .menu-box .list-menu :last-child {
+      margin-right: 100px;
+    }
+  
+    /* 
+  
+      END MENU AND HEADER DESKTOP
+  
+    */
+}
+}

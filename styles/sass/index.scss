@@ -1,38 +1,12 @@
 
-//
-// Delete default styles
-//
-*{
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  box-sizing: border-box;
-}
-a{
-  text-decoration: none;
-}
+/*  
 
-body{
-  max-width: 1440px;
-  margin: 0 auto;
-}
+  MODULES
 
+*/
 
-
-//
-// VARIABLES
-// 
-
-$blue-podcast: #0000FF;
-$dark-blue-podcast: #0000A3;
-$white-podcast: #FFFFFF;
-$green-podcast: #00F0B8;
-$green-button: #00F3BB;
-
-$black-text: #060A24;
-
-$font-mono: 'IBM Plex Mono', monospace;
-$font-sans: 'IBM Plex Sans', sans-serif;
+@import 'modules/variables';
+@import 'modules/default';
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600&display=swap');
 
@@ -40,1008 +14,132 @@ $font-sans: 'IBM Plex Sans', sans-serif;
 
 
 
+/* 
 
+  MENU AND HEADER
 
-//
-// MENU AND HEADER
-// 
-.header{
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  height: 44px;
-  width: 100%;
-  background-color: $white-podcast;
-
-  .logo{
-    margin: 10px 16px;
-    width: 24px;
-    height: 24px;
-    .img-logo{
-      width: 100%;
-      height: auto;
-    }
-    
-  }
-  .menu-box{
-    margin: 16px;
-    align-items: center;
-    
-    
-    #menu-drop{
-      height: 12px;
-      width: 20px;
-      visibility: hidden;
-      position: absolute;
-    }
-    #menu-drop:checked{
-      &~.label-menu{
-        .menu-bar{
-        visibility: hidden;
-        }
-        .menu-xtop, .menu-xbottom{
-          visibility: visible;
-        }
-      }
-      &~.list-menu{
-        visibility: visible;
-        height: 180px;
-        opacity: 1;
-        
-        .link-menu{
-          opacity: 1;
-          line-height: 28px;
-          
-          
-        }
-      }
-    }
-
-    .label-menu{
-
-      .menu-bar{
-        position: relative;
-        width: 18px;
-        height: 2px;
-        background-color: $black-text;
-        border-radius: 5px;
-        &::after,
-        &::before {
-          position: absolute;
-          display: block;
-          content: '';
-          width: 18px;
-          height: 2px;
-          background: $black-text;
-          top: 5px;
-          border-radius: 5px;
-        }
-        &::after{
-          top: 10px;
-        }
-      } 
-
-      .menu-xtop, .menu-xbottom{
-        visibility: hidden;
-        position: relative;
-        width: 14px;
-        height: 3px;
-        transform: skew(0, 45deg);
-        background-color: $black-text;
-        border-radius: 5px;
-      }
-      .menu-xbottom{
-        top: -3px;
-        transform: skew(0, -45deg);
-      }
-    }
-    .label-menu:hover{
-      cursor: pointer;
-    }
-
-
-    .list-menu{
-      position: absolute;
-      top: 44px;
-      left: 0;
-      visibility: hidden;
-      width: 100%;
-      background-color: $blue-podcast;
-      height: 0px;
-      opacity: 1;
-      transition: height 0.25s;
-    
-      .link-menu{
-        display: flex;
-        font-family: $font-mono;
-        text-transform: uppercase;
-        font-size: 16px;
-        line-height: 0px;
-        margin: 12px 16px 12px;
-        color: $white-podcast;
-        background-color: $blue-podcast;
-        font-weight: 300;
-        opacity: 0;
-        transition: opacity 1.5s;
-        -webkit-transition: opacity 1.5s;
-        
-        
-      }
-      :last-child{
-        margin-bottom: 16px;
-      }
-      .link-menu:hover{
-        color: $green-podcast;
-        text-decoration: line-through;
-      }
-      .link-menu:active{
-        color: $black-text;
-      }
-    }
-  }
-}
-
-
-
-
-//
-// WELCOME
-// 
-
-.welcome{
-  padding: 16px;
-  
-  .title{
-    margin-top: 13px;
-    margin-bottom: 16px;
-    font-family: $font-sans;
-    font-size: 36px;
-    line-height: 42px;
-    color: $black-text;
-    font-weight: 300;
-  
-    .strikethrough{
-      text-decoration:line-through;
-    }
-
-    .slice{
-      display: block;
-    }
-  }
-  .paragraph{
-    font-family: $font-mono;
-    font-size: 13px;
-    line-height: 22px;
-    font-weight: 300;
-    
-  }
-
-  .button{
-    font-family: $font-mono;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: $black-text;
-    background: $green-podcast;
-    border: none;
-    width: 100%;
-    height: 48px;
-    margin-top: 36px;
-    margin-bottom: 20px;
-    transition: all 0.35s;
-    
-  }
-  .button:hover{
-    color: $white-podcast;
-    background: linear-gradient(to right, $green-podcast, $blue-podcast);
-    cursor: pointer;
-  }
-}
-
-
-
-
-//
-// EPISODES
-// 
-
-.episodes{
-  padding: 11px;
-  
-  &.background-skewed{
-    position: relative;
-    &::after{
-      display: block;
-      background-image: linear-gradient(225deg, $blue-podcast 0%, $dark-blue-podcast 100%);
-      position: absolute;
-      content: '';
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      top: 0;
-      left: 0;
-      transform: skew(0, -5deg);
-      
-    }
-  }
-
-
-  .title{
-    position: relative;
-    margin-top: 45px;
-    margin-left: 5px;
-    margin-bottom: 21px;
-    font-family: $font-sans;
-    font-size: 36px;
-    line-height: 42px;
-    color: $black-text;
-    font-weight: 300;
-    color: $white-podcast;
-    z-index: 10;
-    
-  }
-
-  .tracks{
-
-    .podcast{
-      position: relative;
-      z-index: 10;
-      margin-bottom: 11px;
-      &.last-audio{
-        margin-bottom: 110px;
-      }
-    }
-  }
-}
-
-
-
-
-//
-// ORIGIN
-// 
-.origin{
-  margin-bottom: -30px;
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  justify-content: center;
-  z-index: 10;
-
-  .img-origin{
-    position: relative;
-    width: 360px;
-    height: 519px;
-    top: -75px;
-    margin-bottom: 27px;
-
-  }
-  .origin-container{
-    position: relative;
-    top: -75px;
-    margin: 0px 16px;
-  
-    .title{
-      font-family: $font-sans;
-      font-size: 36px;
-      line-height: 42px;
-      color: $black-text;
-      font-weight: 400;
-      margin-bottom: 8px;
-    }
-
-    .paragraph{
-      font-family: $font-mono;
-      font-size: 13px;
-      line-height: 22px;
-      color: $black-text;
-      font-weight: 300;
-      
-    }
-  }
-}
-
-
-
-
-//
-// INTERVIEWS
-// 
-.interviews{
-  
-  .title{
-    font-family: $font-sans;
-    font-size: 36px;
-    line-height: 42px;
-    color: $black-text;
-    font-weight: 400;
-    margin: 0px 16px 14px 16px;
-
-  }
-
-  .img-container{
-    display: flex;
-    flex-direction: column;
-    .img-box{
-      width: 100%;
-      height: auto;
-      margin-bottom: -1px;
-    }
-
-  }
-}
-
-
-
-
-//
-// TOPICS
-// 
-
-.topics{
-  .title{
-    font-family: $font-sans;
-    font-size: 36px;
-    line-height: 42px;
-    color: $black-text;
-    font-weight: 400;
-    margin: 48px 16px 24px 16px;
-  }
-  .topic-container{
-    display: flex;
-    flex-direction: column;
-
-    .card{
-      display: flex;
-      flex-direction: column;
-      
-      .img-topic{
-        align-items: center;
-        padding: 13px 0px;
-        
-      }
-      .subtitle{
-        font-family: $font-sans;
-        font-size: 24px;
-        line-height: 32px;
-        color: $black-text;
-        font-weight: 600;
-        text-align: center;
-        margin: 0px 16px 52px 16px;
-        
-      }
-    }
-  }
-}
-
-
-
-
-//
-// NOVELTIES
-// 
-
-.novelties{
-  padding: 16px;
-  margin-bottom: -15px;
-  
-
-  &.background-skewed{
-    position: relative;
-    &::after{
-      display: block;
-      background-image: linear-gradient(225deg, $blue-podcast 0%, $dark-blue-podcast 100%);
-      position: absolute;
-      content: '';
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      top: 0px;
-      left: 0;
-      transform: skew(0, -5deg);
-      
-    }
-    
-  }
-
-  .title{
-    position: relative;
-    z-index: 10;
-    font-family: $font-sans;
-    font-size: 36px;
-    line-height: 42px;
-    color: $white-podcast;
-    font-weight: 300;
-    text-align: center;
-    margin: 30px 0px 36px 0px;
-  }
-  .button{
-    position: relative;
-    z-index: 10;
-    font-family: $font-mono;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: $black-text;
-    background: $green-podcast;
-    border: none;
-    width: 100%;
-    height: 48px;
-    margin-bottom: 67px;
-    transition: all 0.35s;
-  }
-  .button:hover{
-    color: $white-podcast;
-    background: linear-gradient(to right, $green-podcast, $blue-podcast);
-    cursor: pointer;
-  }
-}
-
-
-
-//
-// FOOTER
-// 
-.footer-section{
-  position: relative;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: $white-podcast;
-
-  .footer-text{
-    font-family: $font-mono;
-    font-size: 14px;
-    line-height: 22px;
-    color: $black-text;
-    font-weight: 300;
-    margin: 24px 0px 16px 0px;
-
-  }
-  .icon-container{
-    margin-left: 45px;
-    margin-right: 45px;
-    display: flex;
-
-    .fab{
-      width: 16px;
-      margin: 0px 19px 31px;
-
-    }
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-// 
-//VISTA TABLET
-//
-
-@media (min-width:771px){
-
-//
-// MENU AND HEADER
-// 
-.header{
-  align-items: center;
-  height: 80px;
-  
-
-  .logo{
-    margin: 22px 70px;
-    width: 36px;
-    height: 36px;
-    
-  }
-
-  .menu-box{
-    display: flex;
-    margin: 0;     
-  
-    #menu-drop{
-      display: none;
-    }
-
-    .label-menu{
-      display: none;
-      
-    }
-
-    .list-menu{
-      position: relative;
-      top: 0;
-      visibility: visible;
-      background-color: $white-podcast;
-      display: flex;
-      height: 80px;
-    
-      .link-menu{
-        position: relative;
-        line-height: 28px;
-        margin: 20px 18px;
-        color: $black-text;
-        background-color: $white-podcast;
-        opacity: 1;
-        
-      }
-      :last-child{
-        margin-right: 35px;
-
-      }
-    }
-  }
-}
-
-
-
-//
-// WELCOME
-// 
-
-.welcome{
-  margin-left: 80px;
-  
-  
-  .title{
-    margin-top: 40px;
-    margin-bottom: 8px;
-    font-size: 50px;
-    line-height: 60px;
-
-    .slice{
-      display: inline;
-    }
-  }
-  .paragraph{
-    font-size: 16px;
-    line-height: 24px;
-    width: 400px;
-  }
-
-  .button{
-    font-size: 18px;
-    line-height: 24px;
-    width: 226px;
-    height: 56px;
-    margin-top: 46px;
-    margin-bottom: 5px;
-  }
-  
-}
-
-
-
-
-//
-// EPISODES
-//
-
-.episodes{
-  padding: 15px;
-  
-  &.background-skewed{
-    &::after{
-      top: 60px;
-      
-    }
-  }
-
-  .title {
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-bottom: 26px;
-    font-size: 48px;
-    line-height: 62px;
-    
-  }
-
-  .tracks{
-    align-self: center;
-    display: flex;
-    width: 100%;
-    margin: 0px 0px 0px 15px;
-    
-
-    .podcast{
-      margin-right: 25px;
-      margin-bottom: 25px;
-      width: 584px;
-      
-    }
-  }
-  :last-child{
-    margin-bottom: -60px;
-  } 
-}
-
-
-
-
-//
-// ORIGIN
-// 
-
-
-.origin{
-  margin-bottom: 0px;
-  
-
-  .img-origin{
-    width: 300px;
-    height: 486.5px;
-    top: 0px;
-    margin: 0px 10px 0px 45px;
-
-  }
-  .origin-container{
-    top: 90px;
-  
-    .title{
-      font-size: 40px;
-      line-height: 50px;
-      margin-bottom: 24px;
-
-    }
-
-    .paragraph{
-      font-size: 14px;
-      line-height: 24px;
-      width: 320px;
-    }
-  }
-}
-
-
-
-
-//
-// INTERVIEWS
-// 
-.interviews{
-  
-  .title{
-    font-size: 40px;
-    line-height: 50px;
-    margin: 50px 0px 36px 100px;
-
-  }
-
-  .img-container{
-    flex-direction: row;
-    flex-wrap: wrap;
-    .img-box{
-      width: 50%;
-      height: 50%;
-    }
-
-  }
-}
-
-
-
-
-//
-// TOPICS
-// 
-
-.topics{
-  .title{
-    font-size: 40px;
-    line-height: 50px;
-    margin: 50px 0px 56px 90px;
-  }
-  .topic-container{
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    .card{
-      width: 40%;
-      
-      .img-topic{
-        margin-bottom: 16px;
-
-      }
-    }
-  }
-}
-
-
-
-
-// 
-// NOVELTIES
-// 
-.novelties{
-  margin-bottom: -5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  &.background-skewed{
-    
-    &::after{
-      top: 60px;
-      transform: skew(0, -6.1 deg);
-      
-    }
-  }
-
-  .title{
-    font-size: 40px;
-    line-height: 50px;
-    margin: 140px 0px 36px 0px;
-
-  }
-  .button{
-    width: 345px;
-    height: 56px;
-    margin-bottom: 55px;
-
-  }
-}
-
-
-
-
-//
-// FOOTER
-// 
-.footer-section{
-  width: 100%;
-  height: 120px;
-  flex-direction: row;
-  justify-content: space-between;
-  
-  .footer-text{
-    font-size: 16px;
-    line-height: 28px;
-    margin: 36px 0px 31px 50px;
-
-  }
-  .icon-container{
-    margin-right: 30px;
-
-    .fab{
-      width: 18px;
-      margin: 36px 19px 31px;
-
-    }
-  }
-}
-
-}
-
-
-
-
-
-// 
-//DESKTOP VIEW
-//
-
-@media (min-width:1440px){
-
-//
-// MENU AND HEADER
-//
-
-  .header{
-  
-    .logo{
-      margin: 22px 100px;
-      
-    }
-
-    .menu-box{
-  
-      .list-menu{
-      
-        .link-menu{
-          margin: 26px 24px;
-          
-        }
-        :last-child{
-          margin-right: 100px;
-        }
-      }
-    }
-  
-  }
-
-
-
-
-//
-// WELCOME
-// 
-.welcome{
-  margin-left: 200px;
-  
-  
-  .title{
-    margin-top: 120px;
-    margin-bottom: 0px;
-    font-size: 64px;
-    line-height: 84px;
-
-  }
-  .paragraph{
-    width: 626px;
-
-  }
-
-  .button{
-    margin-top: 56px;
-    
-  }
-}
-
-
-
-
-//
-// EPISODES
-//
-
-.episodes{
-  padding: 11px;
-
-  .title{
-    margin-top: 186px;
-    margin-left: 200px;
-    
-  }
-
-  .tracks{
-    margin-left: 17px;
-
-    .podcast{
-      margin-left: 72px;
-      margin-bottom: 72px;
-
-    }
-  }
-  :last-child{
-    margin-bottom: 53px;
-  } 
-}
-
-
-
-
-
-//
-// ORIGIN
-// 
-
-
-.origin{
-
-  .img-origin{
-    width: 457.6px;
-    height: 742.5px;
-    top: -50px;
-    margin: 0px 62.4px 0px 0px;
-
-  }
-  .origin-container{
-    top: 170px;
-
-    .title{
-      font-size: 48px;
-      line-height: 62px;
-      color: $black-text;
-
-    }
-
-    .paragraph{
-      font-size: 16px;
-      width: 464px;
-    }
-  }
-}
-
-
-
-
-//
-// INTERVIEWS
-// 
-.interviews{
-  
-  .title{
-    font-size: 48px;
-    line-height: 62px;
-    margin: 0px 0px 36px 200px;
-    
-  }
-
-  .img-container{
-
-    .img-box{
-      width: 33.3%;
-      height: 33.3%;
-    }
-
-  }
-}
-
-
-
-
-//
-// TOPICS
-// 
-
-.topics{
-  .title{
-    font-size: 48px;
-    line-height: 62px;
-    margin: 64px 0px 56px 200px;
-
-  }
-  .topic-container{
-    flex-wrap: nowrap;
-
-    .card{
-      width: 260px;
-      
-    }
-  }
-}
-
-
-
-
-// 
-// NOVELTIES
-// 
-.novelties{
-
-  .title{
-    font-size: 48px;
-    line-height: 62px;
-    margin: 197px 0px 36px 0px;
-
-  }
-  .button{
-    margin-bottom: 139px;
-
-  }
-}
-
-
-
-
-//
-// FOOTER
-// 
-.footer-section{
-  height: 130px;
-  flex-direction: row;
-
-  .footer-text{
-    margin: 36px 0px 31px 100px;
-
-  }
-  .icon-container{
-    margin-right: 81px;
-  
-  }
-}
-
-}
+*/
+
+@import 'modules/1header';
+
+/*
+  END MENU AND HEADER
+
+*/
+
+
+
+
+/* 
+
+  WELCOME
+
+*/
+
+@import 'modules/2welcome';
+
+/* 
+
+  END WELCOME
+
+*/
+
+
+
+
+/* 
+
+  EPISODES
+
+*/
+
+@import 'modules/3episodes';
+
+/* 
+
+  END EPISODES
+
+*/
+
+
+/* 
+
+  ORIGIN
+
+*/
+
+@import 'modules/4origin';
+
+/* 
+
+  END ORIGIN
+
+*/
+
+
+
+
+/* 
+
+  INTERVIEWS
+
+*/
+
+@import 'modules/5interviews';
+
+/* 
+
+  END INTERVIEWS
+
+*/
+
+
+
+
+/* 
+
+  TOPICS
+
+*/
+
+@import 'modules/6topics';
+
+/* 
+
+  END TOPICS
+
+*/
+
+
+
+/* 
+
+  NOVELTIES
+
+*/
+
+@import 'modules/7novelties';
+
+/* 
+
+  END NOVELTIES
+
+*/
+
+
+
+
+/* 
+
+  FOOTER
+
+*/
+
+@import  'modules/8footer';
+
+/* 
+
+  END FOOTER
+
+*/
+

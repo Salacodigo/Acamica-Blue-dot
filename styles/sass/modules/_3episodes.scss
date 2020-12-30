@@ -1,0 +1,150 @@
+/* 
+
+  EPISODES MOBILE
+
+*/
+.episodes{
+  padding: 11px;
+  
+  &.background-skewed{
+    position: relative;
+    &::after{
+      display: block;
+      background-image: linear-gradient(225deg, $blue-podcast 0%, $dark-blue-podcast 100%);
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      transform: skew(0, -5deg);
+      
+    }
+  }
+
+
+  .title{
+    position: relative;
+    margin-top: 45px;
+    margin-left: 5px;
+    margin-bottom: 21px;
+    font-family: $font-sans;
+    font-size: 36px;
+    line-height: 42px;
+    color: $black-text;
+    font-weight: 300;
+    color: $white-podcast;
+    z-index: 10;
+    
+  }
+
+  .tracks{
+
+    .podcast{
+      position: relative;
+      z-index: 10;
+      margin-bottom: 11px;
+      &.last-audio{
+        margin-bottom: 110px;
+      }
+    }
+  }
+}
+
+/* 
+
+  END EPISODES MOBILE
+
+*/
+
+
+/* 
+
+  EPISODES TABLET
+
+*/
+@media (min-width:771px){
+
+  .episodes{
+    padding: 15px;
+    
+    &.background-skewed{
+      &::after{
+        top: 60px;
+        
+      }
+    }
+  
+    .title {
+      margin-top: 100px;
+      margin-left: 100px;
+      margin-bottom: 26px;
+      font-size: 48px;
+      line-height: 62px;
+      
+    }
+  
+    .tracks{
+      align-self: center;
+      display: flex;
+      width: 100%;
+      margin: 0px 0px 0px 15px;
+      
+  
+      .podcast{
+        margin-right: 25px;
+        margin-bottom: 25px;
+        width: 584px;
+        
+      }
+    }
+    :last-child{
+      margin-bottom: -60px;
+    } 
+  }
+}
+/* 
+
+  END EPISODES TABLET
+
+*/
+
+/* 
+
+  EPISODES DESKTOP
+
+*/
+
+
+@media (min-width:1440px){
+
+
+.episodes{
+  padding: 11px;
+
+  .title{
+    margin-top: 186px;
+    margin-left: 200px;
+    
+  }
+
+  .tracks{
+    margin-left: 17px;
+
+    .podcast{
+      margin-left: 72px;
+      margin-bottom: 72px;
+
+    }
+  }
+  :last-child{
+    margin-bottom: 53px;
+  } 
+}
+}
+  /* 
+
+    END EPISODES DESKTOP
+
+  */
