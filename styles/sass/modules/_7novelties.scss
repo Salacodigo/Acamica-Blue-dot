@@ -1,0 +1,141 @@
+/* 
+
+  NOVELTIES MOBILE
+
+*/
+
+.novelties{
+  padding: 16px;
+  margin-bottom: -15px;
+  
+
+  &.background-skewed{
+    position: relative;
+    &::after{
+      display: block;
+      background-image: linear-gradient(225deg, $blue-podcast 0%, $dark-blue-podcast 100%);
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      top: 0px;
+      left: 0;
+      transform: skew(0, -5deg);
+      
+    }
+    
+  }
+
+  .title{
+    position: relative;
+    z-index: 10;
+    font-family: $font-sans;
+    font-size: 36px;
+    line-height: 42px;
+    color: $white-podcast;
+    font-weight: 300;
+    text-align: center;
+    margin: 30px 0px 36px 0px;
+  }
+  .button{
+    position: relative;
+    z-index: 10;
+    font-family: $font-mono;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $black-text;
+    background: $green-podcast;
+    border: none;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 67px;
+    transition: all 0.35s;
+  }
+  .button:hover{
+    color: $white-podcast;
+    background: linear-gradient(to right, $green-podcast, $blue-podcast);
+    cursor: pointer;
+  }
+}
+
+/* 
+
+  END NOVELTIES MOBILE
+
+*/
+
+/* 
+
+  NOVELTIES TABLET
+
+*/
+
+@media (min-width:771px){
+
+
+  .novelties{
+    margin-bottom: -5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    &.background-skewed{
+      
+      &::after{
+        top: 60px;
+        transform: skew(0, -6.1 deg);
+        
+      }
+    }
+  
+    .title{
+      font-size: 40px;
+      line-height: 50px;
+      margin: 140px 0px 36px 0px;
+  
+    }
+    .button{
+      width: 345px;
+      height: 56px;
+      margin-bottom: 55px;
+  
+    }
+  }
+}
+/* 
+
+  END NOVELTIES TABLET
+
+*/
+
+
+/* 
+  
+  NOVELTIES DESKTOP
+  
+*/
+
+@media (min-width:1440px){
+
+  .novelties{
+  
+    .title{
+      font-size: 48px;
+      line-height: 62px;
+      margin: 197px 0px 36px 0px;
+  
+    }
+    .button{
+      margin-bottom: 139px;
+  
+    }
+  }
+}
+/* 
+
+  END NOVELTIES DESKTOP
+
+*/

@@ -1,0 +1,103 @@
+/* 
+
+  INTERVIEWS MOBILE
+
+*/
+.interviews{
+  
+  .title{
+    font-family: $font-sans;
+    font-size: 36px;
+    line-height: 42px;
+    color: $black-text;
+    font-weight: 400;
+    margin: 0px 16px 14px 16px;
+
+  }
+
+  .img-container{
+    display: flex;
+    flex-direction: column;
+    .img-box{
+      width: 100%;
+      height: auto;
+      margin-bottom: -1px;
+    }
+
+  }
+}
+
+/* 
+
+  END INTERVIEWS MOBILE
+
+*/
+
+/* 
+
+  INTERVIEWS TABLET
+
+*/
+
+@media (min-width:771px){
+
+  .interviews{
+    
+    .title{
+      font-size: 40px;
+      line-height: 50px;
+      margin: 50px 0px 36px 100px;
+  
+    }
+  
+    .img-container{
+      flex-direction: row;
+      flex-wrap: wrap;
+      .img-box{
+        width: 50%;
+        height: 50%;
+      }
+  
+    }
+  }
+}
+/* 
+
+  END INTERVIEWS TABLET
+
+*/
+
+
+/* 
+
+  INTERVIEWS DESKTOP
+
+*/
+  
+
+@media (min-width:1440px){
+
+  .interviews{
+    
+    .title{
+      font-size: 48px;
+      line-height: 62px;
+      margin: 0px 0px 36px 200px;
+      
+    }
+  
+    .img-container{
+  
+      .img-box{
+        width: 33.3%;
+        height: 33.3%;
+      }
+  
+    }
+  }
+}
+/* 
+
+  END INTERVIEWS DESKTOP
+
+*/

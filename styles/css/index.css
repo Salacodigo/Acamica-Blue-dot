@@ -1,5 +1,10 @@
 /*  
 
+  MODULES
+
+*/
+/*  
+
   Delete default styles
 
 */
@@ -23,12 +28,17 @@ body {
 
 /*  
 
-  VARIABLES
+  END Delete default styles
 
 */
 /* 
 
   MENU AND HEADER
+
+*/
+/* 
+
+  MENU AND HEADER MOBILE
 
 */
 .header {
@@ -147,12 +157,96 @@ body {
 
 /* 
 
+  END MENU AND HEADER MOBILE
+
+*/
+/* 
+
+  MENU AND HEADER TABLET
+
+*/
+@media (min-width: 771px) {
+  .header {
+    align-items: center;
+    height: 80px;
+  }
+  .header .logo {
+    margin: 22px 70px;
+    width: 36px;
+    height: 36px;
+  }
+  .header .menu-box {
+    display: flex;
+    margin: 0;
+  }
+  .header .menu-box #menu-drop {
+    display: none;
+  }
+  .header .menu-box .label-menu {
+    display: none;
+  }
+  .header .menu-box .list-menu {
+    position: relative;
+    top: 0;
+    visibility: visible;
+    background-color: #FFFFFF;
+    display: flex;
+    height: 80px;
+  }
+  .header .menu-box .list-menu .link-menu {
+    position: relative;
+    line-height: 28px;
+    margin: 20px 18px;
+    color: #060A24;
+    background-color: #FFFFFF;
+    opacity: 1;
+  }
+  .header .menu-box .list-menu :last-child {
+    margin-right: 35px;
+  }
+
+  /* 
+
+    END MENU AND HEADER TABLET
+
+  */
+  /* 
+
+    MENU AND HEADER DESKTOP
+
+  */
+}
+@media (min-width: 771px) and (min-width: 1440px) {
+  .header .logo {
+    margin: 22px 100px;
+  }
+
+  .header .menu-box .list-menu .link-menu {
+    margin: 26px 24px;
+  }
+
+  .header .menu-box .list-menu :last-child {
+    margin-right: 100px;
+  }
+
+  /* 
+
+    END MENU AND HEADER DESKTOP
+
+  */
+}
+/*
   END MENU AND HEADER
 
 */
 /* 
 
   WELCOME
+
+*/
+/* 
+
+  WELCOME MOBILE
 
 */
 .welcome {
@@ -202,12 +296,86 @@ body {
 
 /* 
 
+  END WELCOME MOBILE
+
+*/
+/* 
+
+  WELCOME TABLET
+
+*/
+@media (min-width: 771px) {
+  .welcome {
+    margin-left: 80px;
+  }
+  .welcome .title {
+    margin-top: 40px;
+    margin-bottom: 8px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .welcome .title .slice {
+    display: inline;
+  }
+  .welcome .paragraph {
+    font-size: 16px;
+    line-height: 24px;
+    width: 400px;
+  }
+  .welcome .button {
+    font-size: 18px;
+    line-height: 24px;
+    width: 226px;
+    height: 56px;
+    margin-top: 46px;
+    margin-bottom: 5px;
+  }
+}
+/* 
+
+  END WELCOME TABLET
+
+*/
+/* 
+
+  WELCOME DESKTOP
+
+*/
+@media (min-width: 1440px) {
+  .welcome {
+    margin-left: 200px;
+  }
+  .welcome .title {
+    margin-top: 120px;
+    margin-bottom: 0px;
+    font-size: 64px;
+    line-height: 84px;
+  }
+  .welcome .paragraph {
+    width: 626px;
+  }
+  .welcome .button {
+    margin-top: 56px;
+  }
+}
+/* 
+
+  END WELCOME DESKTOP
+
+*/
+/* 
+
   END WELCOME
 
 */
 /* 
 
   EPISODES
+
+*/
+/* 
+
+  EPISODES MOBILE
 
 */
 .episodes {
@@ -252,12 +420,90 @@ body {
 
 /* 
 
+  END EPISODES MOBILE
+
+*/
+/* 
+
+  EPISODES TABLET
+
+*/
+@media (min-width: 771px) {
+  .episodes {
+    padding: 15px;
+  }
+  .episodes.background-skewed::after {
+    top: 60px;
+  }
+  .episodes .title {
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 26px;
+    font-size: 48px;
+    line-height: 62px;
+  }
+  .episodes .tracks {
+    align-self: center;
+    display: flex;
+    width: 100%;
+    margin: 0px 0px 0px 15px;
+  }
+  .episodes .tracks .podcast {
+    margin-right: 25px;
+    margin-bottom: 25px;
+    width: 584px;
+  }
+  .episodes :last-child {
+    margin-bottom: -60px;
+  }
+}
+/* 
+
+  END EPISODES TABLET
+
+*/
+/* 
+
+  EPISODES DESKTOP
+
+*/
+@media (min-width: 1440px) {
+  .episodes {
+    padding: 11px;
+  }
+  .episodes .title {
+    margin-top: 186px;
+    margin-left: 200px;
+  }
+  .episodes .tracks {
+    margin-left: 17px;
+  }
+  .episodes .tracks .podcast {
+    margin-left: 72px;
+    margin-bottom: 72px;
+  }
+  .episodes :last-child {
+    margin-bottom: 53px;
+  }
+}
+/* 
+
+  END EPISODES DESKTOP
+
+*/
+/* 
+
   END EPISODES
 
 */
 /* 
 
   ORIGIN
+
+*/
+/* 
+
+  ORIGIN MOBILE
 
 */
 .origin {
@@ -298,12 +544,86 @@ body {
 
 /* 
 
+  END ORIGIN MOBILE
+
+*/
+/* 
+
+  ORIGIN TABLET
+
+*/
+@media (min-width: 771px) {
+  .origin {
+    margin-bottom: 0px;
+  }
+  .origin .img-origin {
+    width: 300px;
+    height: 486.5px;
+    top: 0px;
+    margin: 0px 10px 0px 45px;
+  }
+  .origin .origin-container {
+    top: 90px;
+  }
+  .origin .origin-container .title {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 24px;
+  }
+  .origin .origin-container .paragraph {
+    font-size: 14px;
+    line-height: 24px;
+    width: 320px;
+  }
+}
+/* 
+
+  END ORIGIN TABLET
+
+*/
+/* 
+
+  ORIGIN DESKTOP
+
+*/
+@media (min-width: 1440px) {
+  .origin .img-origin {
+    width: 457.6px;
+    height: 742.5px;
+    top: -50px;
+    margin: 0px 62.4px 0px 0px;
+  }
+  .origin .origin-container {
+    top: 170px;
+  }
+  .origin .origin-container .title {
+    font-size: 48px;
+    line-height: 62px;
+    color: #060A24;
+  }
+  .origin .origin-container .paragraph {
+    font-size: 16px;
+    width: 464px;
+  }
+}
+/* 
+
+  END ORIGIN DESKTOP
+
+*/
+/* 
+
   END ORIGIN
 
 */
 /* 
 
   INTERVIEWS
+
+*/
+/* 
+
+  INTERVIEWS MOBILE
 
 */
 .interviews .title {
@@ -326,7 +646,63 @@ body {
 
 /* 
 
+  END INTERVIEWS MOBILE
+
+*/
+/* 
+
+  INTERVIEWS TABLET
+
+*/
+@media (min-width: 771px) {
+  .interviews .title {
+    font-size: 40px;
+    line-height: 50px;
+    margin: 50px 0px 36px 100px;
+  }
+  .interviews .img-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .interviews .img-container .img-box {
+    width: 50%;
+    height: 50%;
+  }
+}
+/* 
+
+  END INTERVIEWS TABLET
+
+*/
+/* 
+
+  INTERVIEWS DESKTOP
+
+*/
+@media (min-width: 1440px) {
+  .interviews .title {
+    font-size: 48px;
+    line-height: 62px;
+    margin: 0px 0px 36px 200px;
+  }
+  .interviews .img-container .img-box {
+    width: 33.3%;
+    height: 33.3%;
+  }
+}
+/* 
+
+  END INTERVIEWS DESKTOP
+
+*/
+/* 
+
   END INTERVIEWS
+
+*/
+/* 
+
+  TOPICS
 
 */
 /* 
@@ -371,7 +747,68 @@ body {
 */
 /* 
 
+  TOPICS TABLET
+
+*/
+@media (min-width: 771px) {
+  .topics .title {
+    font-size: 40px;
+    line-height: 50px;
+    margin: 50px 0px 56px 90px;
+  }
+  .topics .topic-container {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .topics .topic-container .card {
+    width: 40%;
+  }
+  .topics .topic-container .card .img-topic {
+    margin-bottom: 16px;
+  }
+}
+/* 
+
+  END TOPICS TABLET
+
+*/
+/* 
+
+  TOPICS DESKTOP
+
+*/
+@media (min-width: 1440px) {
+  .topics .title {
+    font-size: 48px;
+    line-height: 62px;
+    margin: 64px 0px 56px 200px;
+  }
+  .topics .topic-container {
+    flex-wrap: nowrap;
+  }
+  .topics .topic-container .card {
+    width: 260px;
+  }
+}
+/* 
+
+  END TOPICS DESKTOP
+
+*/
+/* 
+
+  END TOPICS
+
+*/
+/* 
+
   NOVELTIES
+
+*/
+/* 
+
+  NOVELTIES MOBILE
 
 */
 .novelties {
@@ -428,12 +865,74 @@ body {
 
 /* 
 
+  END NOVELTIES MOBILE
+
+*/
+/* 
+
+  NOVELTIES TABLET
+
+*/
+@media (min-width: 771px) {
+  .novelties {
+    margin-bottom: -5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .novelties.background-skewed::after {
+    top: 60px;
+    transform: skew(0, -6.1 deg);
+  }
+  .novelties .title {
+    font-size: 40px;
+    line-height: 50px;
+    margin: 140px 0px 36px 0px;
+  }
+  .novelties .button {
+    width: 345px;
+    height: 56px;
+    margin-bottom: 55px;
+  }
+}
+/* 
+
+  END NOVELTIES TABLET
+
+*/
+/* 
+
+  NOVELTIES DESKTOP
+
+*/
+@media (min-width: 1440px) {
+  .novelties .title {
+    font-size: 48px;
+    line-height: 62px;
+    margin: 197px 0px 36px 0px;
+  }
+  .novelties .button {
+    margin-bottom: 139px;
+  }
+}
+/* 
+
+  END NOVELTIES DESKTOP
+
+*/
+/* 
+
   END NOVELTIES
 
 */
 /* 
 
   FOOTER
+
+*/
+/* 
+
+  FOOTER MOBILE
 
 */
 .footer-section {
@@ -464,258 +963,15 @@ body {
 
 /* 
 
-  END FOOTER
+  END FOOTER MOBILE
 
 */
 /* 
 
-  VISTA TABLET
+  FOOTER TABLET
 
 */
 @media (min-width: 771px) {
-  /* 
-
-    MENU AND HEADER
-
-  */
-  .header {
-    align-items: center;
-    height: 80px;
-  }
-  .header .logo {
-    margin: 22px 70px;
-    width: 36px;
-    height: 36px;
-  }
-  .header .menu-box {
-    display: flex;
-    margin: 0;
-  }
-  .header .menu-box #menu-drop {
-    display: none;
-  }
-  .header .menu-box .label-menu {
-    display: none;
-  }
-  .header .menu-box .list-menu {
-    position: relative;
-    top: 0;
-    visibility: visible;
-    background-color: #FFFFFF;
-    display: flex;
-    height: 80px;
-  }
-  .header .menu-box .list-menu .link-menu {
-    position: relative;
-    line-height: 28px;
-    margin: 20px 18px;
-    color: #060A24;
-    background-color: #FFFFFF;
-    opacity: 1;
-  }
-  .header .menu-box .list-menu :last-child {
-    margin-right: 35px;
-  }
-
-  /* 
-
-    END MENU AND HEADER
-
-  */
-  /* 
-
-    WELCOME
-
-  */
-  .welcome {
-    margin-left: 80px;
-  }
-  .welcome .title {
-    margin-top: 40px;
-    margin-bottom: 8px;
-    font-size: 50px;
-    line-height: 60px;
-  }
-  .welcome .title .slice {
-    display: inline;
-  }
-  .welcome .paragraph {
-    font-size: 16px;
-    line-height: 24px;
-    width: 400px;
-  }
-  .welcome .button {
-    font-size: 18px;
-    line-height: 24px;
-    width: 226px;
-    height: 56px;
-    margin-top: 46px;
-    margin-bottom: 5px;
-  }
-
-  /* 
-
-    END WELCOME
-
-  */
-  /* 
-
-    EPISODES
-
-  */
-  .episodes {
-    padding: 15px;
-  }
-  .episodes.background-skewed::after {
-    top: 60px;
-  }
-  .episodes .title {
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-bottom: 26px;
-    font-size: 48px;
-    line-height: 62px;
-  }
-  .episodes .tracks {
-    align-self: center;
-    display: flex;
-    width: 100%;
-    margin: 0px 0px 0px 15px;
-  }
-  .episodes .tracks .podcast {
-    margin-right: 25px;
-    margin-bottom: 25px;
-    width: 584px;
-  }
-  .episodes :last-child {
-    margin-bottom: -60px;
-  }
-
-  /* 
-
-    END EPISODES
-
-  */
-  /* 
-
-    ORIGIN
-
-  */
-  .origin {
-    margin-bottom: 0px;
-  }
-  .origin .img-origin {
-    width: 300px;
-    height: 486.5px;
-    top: 0px;
-    margin: 0px 10px 0px 45px;
-  }
-  .origin .origin-container {
-    top: 90px;
-  }
-  .origin .origin-container .title {
-    font-size: 40px;
-    line-height: 50px;
-    margin-bottom: 24px;
-  }
-  .origin .origin-container .paragraph {
-    font-size: 14px;
-    line-height: 24px;
-    width: 320px;
-  }
-
-  /* 
-
-    END ORIGIN
-
-  */
-  /* 
-
-    INTERVIEWS
-
-  */
-  .interviews .title {
-    font-size: 40px;
-    line-height: 50px;
-    margin: 50px 0px 36px 100px;
-  }
-  .interviews .img-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .interviews .img-container .img-box {
-    width: 50%;
-    height: 50%;
-  }
-
-  /* 
-
-    END INTERVIEWS
-
-  */
-  /* 
-
-    TOPICS
-
-  */
-  .topics .title {
-    font-size: 40px;
-    line-height: 50px;
-    margin: 50px 0px 56px 90px;
-  }
-  .topics .topic-container {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .topics .topic-container .card {
-    width: 40%;
-  }
-  .topics .topic-container .card .img-topic {
-    margin-bottom: 16px;
-  }
-
-  /* 
-
-    END TOPICS
-
-  */
-  /* 
-
-    NOVELTIES
-
-  */
-  .novelties {
-    margin-bottom: -5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .novelties.background-skewed::after {
-    top: 60px;
-    transform: skew(0, -6.1 deg);
-  }
-  .novelties .title {
-    font-size: 40px;
-    line-height: 50px;
-    margin: 140px 0px 36px 0px;
-  }
-  .novelties .button {
-    width: 345px;
-    height: 56px;
-    margin-bottom: 55px;
-  }
-
-  /* 
-
-    END NOVELTIES
-
-  */
-  /* 
-
-    FOOTER
-
-  */
   .footer-section {
     width: 100%;
     height: 120px;
@@ -734,193 +990,18 @@ body {
     width: 18px;
     margin: 36px 19px 31px;
   }
-
-  /* 
-
-    END FOOTER
-
-  */
 }
 /* 
 
-  END VISTA TABLET
+  END FOOTER TABLET
 
 */
 /* 
 
-  DESKTOP VIEW
+  FOOTER DESKTOP
 
 */
 @media (min-width: 1440px) {
-  /* 
-
-      MENU AND HEADER
-
-  */
-  .header .logo {
-    margin: 22px 100px;
-  }
-  .header .menu-box .list-menu .link-menu {
-    margin: 26px 24px;
-  }
-  .header .menu-box .list-menu :last-child {
-    margin-right: 100px;
-  }
-
-  /* 
-
-    END MENU AND HEADER
-
-  */
-  /* 
-
-    WELCOME
-
-  */
-  .welcome {
-    margin-left: 200px;
-  }
-  .welcome .title {
-    margin-top: 120px;
-    margin-bottom: 0px;
-    font-size: 64px;
-    line-height: 84px;
-  }
-  .welcome .paragraph {
-    width: 626px;
-  }
-  .welcome .button {
-    margin-top: 56px;
-  }
-
-  /* 
-
-    END WELCOME
-
-  */
-  /* 
-
-    EPISODES
-
-  */
-  .episodes {
-    padding: 11px;
-  }
-  .episodes .title {
-    margin-top: 186px;
-    margin-left: 200px;
-  }
-  .episodes .tracks {
-    margin-left: 17px;
-  }
-  .episodes .tracks .podcast {
-    margin-left: 72px;
-    margin-bottom: 72px;
-  }
-  .episodes :last-child {
-    margin-bottom: 53px;
-  }
-
-  /* 
-
-    END EPISODES
-
-  */
-  /* 
-
-    ORIGIN
-
-  */
-  .origin .img-origin {
-    width: 457.6px;
-    height: 742.5px;
-    top: -50px;
-    margin: 0px 62.4px 0px 0px;
-  }
-  .origin .origin-container {
-    top: 170px;
-  }
-  .origin .origin-container .title {
-    font-size: 48px;
-    line-height: 62px;
-    color: #060A24;
-  }
-  .origin .origin-container .paragraph {
-    font-size: 16px;
-    width: 464px;
-  }
-
-  /* 
-
-    END ORIGIN
-
-  */
-  /* 
-
-    INTERVIEWS
-
-  */
-  .interviews .title {
-    font-size: 48px;
-    line-height: 62px;
-    margin: 0px 0px 36px 200px;
-  }
-  .interviews .img-container .img-box {
-    width: 33.3%;
-    height: 33.3%;
-  }
-
-  /* 
-
-    END INTERVIEWS
-
-  */
-  /* 
-
-    TOPICS
-
-  */
-  .topics .title {
-    font-size: 48px;
-    line-height: 62px;
-    margin: 64px 0px 56px 200px;
-  }
-  .topics .topic-container {
-    flex-wrap: nowrap;
-  }
-  .topics .topic-container .card {
-    width: 260px;
-  }
-
-  /* 
-
-    END TOPICS
-
-  */
-  /* 
-
-    NOVELTIES
-
-  */
-  .novelties .title {
-    font-size: 48px;
-    line-height: 62px;
-    margin: 197px 0px 36px 0px;
-  }
-  .novelties .button {
-    margin-bottom: 139px;
-  }
-
-  /* 
-
-    END NOVELTIES
-
-  */
-  /* 
-
-    FOOTER
-
-  */
   .footer-section {
     height: 130px;
     flex-direction: row;
@@ -931,16 +1012,15 @@ body {
   .footer-section .icon-container {
     margin-right: 81px;
   }
-
-  /* 
-
-    END FOOTER
-
-  */
 }
 /* 
 
-  END DESKTOP VIEW
+  END FOOTER DESKTOP
+
+*/
+/* 
+
+  END FOOTER
 
 */
 
