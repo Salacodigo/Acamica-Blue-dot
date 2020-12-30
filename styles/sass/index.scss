@@ -36,16 +36,20 @@ $font-sans: 'IBM Plex Sans', sans-serif;
 
 
 
+
 //
 
 // MENU AND HEADER
 
 // 
 .header{
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   height: 44px;
+  width: 100%;
+  background-color: $white-podcast;
 
   .logo{
     margin: 10px 16px;
@@ -73,22 +77,32 @@ $font-sans: 'IBM Plex Sans', sans-serif;
         .menu-bar{
         visibility: hidden;
         }
-        .menu-x{
+        .menu-xtop, .menu-xbottom{
           visibility: visible;
         }
       }
       &~.list-menu{
         visibility: visible;
+        height: 180px;
+        opacity: 1;
+        
+        .link-menu{
+          opacity: 1;
+          line-height: 28px;
+          
+          
+        }
       }
     }
 
     .label-menu{
-      
+
       .menu-bar{
         position: relative;
         width: 18px;
         height: 2px;
-        background-color: black;
+        background-color: $black-text;
+        border-radius: 5px;
         &::after,
         &::before {
           position: absolute;
@@ -96,20 +110,27 @@ $font-sans: 'IBM Plex Sans', sans-serif;
           content: '';
           width: 18px;
           height: 2px;
-          background: black;
+          background: $black-text;
           top: 5px;
+          border-radius: 5px;
         }
         &::after{
           top: 10px;
         }
       } 
 
-      .menu-x{
+      .menu-xtop, .menu-xbottom{
         visibility: hidden;
-        position: absolute;
-        width: 18px;
-        height: 6px;
-        background-color: black;
+        position: relative;
+        width: 14px;
+        height: 3px;
+        transform: skew(0, 45deg);
+        background-color: $black-text;
+        border-radius: 5px;
+      }
+      .menu-xbottom{
+        top: -3px;
+        transform: skew(0, -45deg);
       }
     }
     .label-menu:hover{
@@ -124,16 +145,24 @@ $font-sans: 'IBM Plex Sans', sans-serif;
       visibility: hidden;
       width: 100%;
       background-color: $blue-podcast;
+      height: 0px;
+      opacity: 1;
+      transition: height 0.25s;
     
       .link-menu{
         display: flex;
         font-family: $font-mono;
         text-transform: uppercase;
         font-size: 16px;
-        line-height: 28px;
-        margin: 16px 16px 12px;
+        line-height: 0px;
+        margin: 12px 16px 12px;
         color: $white-podcast;
         background-color: $blue-podcast;
+        font-weight: 300;
+        opacity: 0;
+        transition: opacity 1.5s;
+        -webkit-transition: opacity 1.5s;
+        
         
       }
       :last-child{
@@ -159,6 +188,7 @@ $font-sans: 'IBM Plex Sans', sans-serif;
 
 .welcome{
   padding: 16px;
+  position: relative;
   
   .title{
     margin-top: 13px;
@@ -203,6 +233,7 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   .button:hover{
     color: $white-podcast;
     background: linear-gradient(to right, $green-podcast, $blue-podcast);
+    cursor: pointer;
   }
 }
 
@@ -325,6 +356,7 @@ $font-sans: 'IBM Plex Sans', sans-serif;
     .img-box{
       width: 100%;
       height: auto;
+      margin-bottom: -1px;
     }
 
   }
@@ -436,6 +468,7 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   .button:hover{
     color: $white-podcast;
     background: linear-gradient(to right, $green-podcast, $blue-podcast);
+    cursor: pointer;
   }
 }
 
@@ -525,7 +558,8 @@ $font-sans: 'IBM Plex Sans', sans-serif;
       top: 0;
       visibility: visible;
       background-color: $white-podcast;
-      display: flex;      
+      display: flex;
+      height: 80px;
     
       .link-menu{
         position: relative;
@@ -533,6 +567,7 @@ $font-sans: 'IBM Plex Sans', sans-serif;
         margin: 20px 18px;
         color: $black-text;
         background-color: $white-podcast;
+        opacity: 1;
         
       }
       :last-child{
@@ -612,6 +647,7 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   }
 
   .tracks{
+    align-self: center;
     display: flex;
     width: 100%;
     margin: 0px 0px 0px 15px;
@@ -640,6 +676,7 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   position: relative;
   z-index: 10;
   margin-bottom: 0px;
+  justify-content: center;
 
   .img-origin{
     position: relative;
@@ -1022,7 +1059,7 @@ $font-sans: 'IBM Plex Sans', sans-serif;
     position: relative;
     width: 457.6px;
     top: -50px;
-    margin: 0px 62.4px 0px 200px;
+    margin: 0px 62.4px 0px 0px;
 
   }
   .origin-container{
@@ -1062,13 +1099,14 @@ $font-sans: 'IBM Plex Sans', sans-serif;
     color: $black-text;
     font-weight: 400;
     margin: 0px 0px 36px 200px;
-
+    
   }
 
   .img-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
     .img-box{
       width: 33.3%;
       height: auto;
