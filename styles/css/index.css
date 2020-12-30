@@ -16,6 +16,8 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   height: 44px;
+  width: 100%;
+  background-color: #FFFFFF;
 }
 .header .logo {
   margin: 10px 16px;
@@ -39,17 +41,24 @@ a {
 .header .menu-box #menu-drop:checked ~ .label-menu .menu-bar {
   visibility: hidden;
 }
-.header .menu-box #menu-drop:checked ~ .label-menu .menu-x {
+.header .menu-box #menu-drop:checked ~ .label-menu .menu-xtop, .header .menu-box #menu-drop:checked ~ .label-menu .menu-xbottom {
   visibility: visible;
 }
 .header .menu-box #menu-drop:checked ~ .list-menu {
   visibility: visible;
+  height: 180px;
+  opacity: 1;
+}
+.header .menu-box #menu-drop:checked ~ .list-menu .link-menu {
+  opacity: 1;
+  line-height: 28px;
 }
 .header .menu-box .label-menu .menu-bar {
   position: relative;
   width: 18px;
   height: 2px;
-  background-color: black;
+  background-color: #060A24;
+  border-radius: 5px;
 }
 .header .menu-box .label-menu .menu-bar::after, .header .menu-box .label-menu .menu-bar::before {
   position: absolute;
@@ -57,18 +66,25 @@ a {
   content: "";
   width: 18px;
   height: 2px;
-  background: black;
+  background: #060A24;
   top: 5px;
+  border-radius: 5px;
 }
 .header .menu-box .label-menu .menu-bar::after {
   top: 10px;
 }
-.header .menu-box .label-menu .menu-x {
+.header .menu-box .label-menu .menu-xtop, .header .menu-box .label-menu .menu-xbottom {
   visibility: hidden;
-  position: absolute;
-  width: 18px;
-  height: 6px;
-  background-color: black;
+  position: relative;
+  width: 14px;
+  height: 3px;
+  transform: skew(0, 45deg);
+  background-color: #060A24;
+  border-radius: 5px;
+}
+.header .menu-box .label-menu .menu-xbottom {
+  top: -3px;
+  transform: skew(0, -45deg);
 }
 .header .menu-box .label-menu:hover {
   cursor: pointer;
@@ -80,16 +96,23 @@ a {
   visibility: hidden;
   width: 100%;
   background-color: #0000FF;
+  height: 0px;
+  opacity: 1;
+  transition: height 0.25s;
 }
 .header .menu-box .list-menu .link-menu {
   display: flex;
   font-family: "IBM Plex Mono", monospace;
   text-transform: uppercase;
   font-size: 16px;
-  line-height: 28px;
-  margin: 16px 16px 12px;
+  line-height: 0px;
+  margin: 12px 16px 12px;
   color: #FFFFFF;
   background-color: #0000FF;
+  font-weight: 300;
+  opacity: 0;
+  transition: opacity 1.5s;
+  -webkit-transition: opacity 1.5s;
 }
 .header .menu-box .list-menu :last-child {
   margin-bottom: 16px;
@@ -104,6 +127,7 @@ a {
 
 .welcome {
   padding: 16px;
+  position: relative;
 }
 .welcome .title {
   margin-top: 13px;
@@ -143,6 +167,7 @@ a {
 .welcome .button:hover {
   color: #FFFFFF;
   background: linear-gradient(to right, #00F0B8, #0000FF);
+  cursor: pointer;
 }
 
 .episodes {
@@ -230,6 +255,7 @@ a {
 .interviews .img-container .img-box {
   width: 100%;
   height: auto;
+  margin-bottom: -1px;
 }
 
 .topics .title {
@@ -310,6 +336,7 @@ a {
 .novelties .button:hover {
   color: #FFFFFF;
   background: linear-gradient(to right, #00F0B8, #0000FF);
+  cursor: pointer;
 }
 
 .footer-section {
@@ -365,6 +392,7 @@ a {
     visibility: visible;
     background-color: #FFFFFF;
     display: flex;
+    height: 80px;
   }
   .header .menu-box .list-menu .link-menu {
     position: relative;
@@ -372,6 +400,7 @@ a {
     margin: 20px 18px;
     color: #060A24;
     background-color: #FFFFFF;
+    opacity: 1;
   }
   .header .menu-box .list-menu :last-child {
     margin-right: 35px;
@@ -424,6 +453,7 @@ a {
     z-index: 10;
   }
   .episodes .tracks {
+    align-self: center;
     display: flex;
     width: 100%;
     margin: 0px 0px 0px 15px;
@@ -444,6 +474,7 @@ a {
     position: relative;
     z-index: 10;
     margin-bottom: 0px;
+    justify-content: center;
   }
   .origin .img-origin {
     position: relative;
@@ -712,7 +743,7 @@ a {
     position: relative;
     width: 457.6px;
     top: -50px;
-    margin: 0px 62.4px 0px 200px;
+    margin: 0px 62.4px 0px 0px;
   }
   .origin .origin-container {
     position: relative;
