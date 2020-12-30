@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  max-width: 1440px;
+}
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -211,10 +215,15 @@ a {
 
 .origin {
   margin-bottom: -30px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
 }
 .origin .img-origin {
   position: relative;
-  width: 100%;
+  width: 360px;
+  height: 519px;
   top: -75px;
   margin-bottom: 27px;
 }
@@ -478,6 +487,7 @@ a {
   .origin .img-origin {
     position: relative;
     width: 300px;
+    height: 486.5px;
     top: 0px;
     margin: 0px 10px 0px 45px;
   }
@@ -517,7 +527,7 @@ a {
   }
   .interviews .img-container .img-box {
     width: 50%;
-    height: auto;
+    height: 50%;
   }
 
   .topics .title {
@@ -741,6 +751,7 @@ a {
   .origin .img-origin {
     position: relative;
     width: 457.6px;
+    height: 742.5px;
     top: -50px;
     margin: 0px 62.4px 0px 0px;
   }
@@ -780,7 +791,7 @@ a {
   }
   .interviews .img-container .img-box {
     width: 33.3%;
-    height: auto;
+    height: 33.3%;
   }
 
   .topics .title {
