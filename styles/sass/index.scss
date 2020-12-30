@@ -1,7 +1,9 @@
 
-//
-// Delete default styles
-//
+/*  
+
+  Delete default styles
+
+*/
 *{
   margin: 0;
   padding: 0;
@@ -19,9 +21,11 @@ body{
 
 
 
-//
-// VARIABLES
-// 
+/*  
+
+  VARIABLES
+
+*/
 
 $blue-podcast: #0000FF;
 $dark-blue-podcast: #0000A3;
@@ -42,9 +46,11 @@ $font-sans: 'IBM Plex Sans', sans-serif;
 
 
 
-//
-// MENU AND HEADER
-// 
+/* 
+
+  MENU AND HEADER
+
+*/
 .header{
 
   display: flex;
@@ -181,13 +187,20 @@ $font-sans: 'IBM Plex Sans', sans-serif;
     }
   }
 }
+/* 
+
+  END MENU AND HEADER
+
+*/
 
 
 
 
-//
-// WELCOME
-// 
+/* 
+
+  WELCOME
+
+*/
 
 .welcome{
   padding: 16px;
@@ -240,12 +253,20 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   }
 }
 
+/* 
+
+  END WELCOME
+
+*/
 
 
 
-//
-// EPISODES
-// 
+
+/* 
+
+  EPISODES
+
+*/
 
 .episodes{
   padding: 11px;
@@ -296,12 +317,18 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   }
 }
 
+/* 
+
+  END EPISODES
+
+*/
 
 
+/* 
 
-//
-// ORIGIN
-// 
+  ORIGIN
+
+*/
 .origin{
   margin-bottom: -30px;
   display: flex;
@@ -343,12 +370,20 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   }
 }
 
+/* 
+
+  END ORIGIN
+
+*/
 
 
 
-//
-// INTERVIEWS
-// 
+
+/* 
+
+  INTERVIEWS
+
+*/
 .interviews{
   
   .title{
@@ -373,13 +408,20 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   }
 }
 
+/* 
+
+  END INTERVIEWS
+
+*/
 
 
 
-//
-// TOPICS
-// 
 
+/* 
+
+  TOPICS
+
+*/
 .topics{
   .title{
     font-family: $font-sans;
@@ -415,13 +457,19 @@ $font-sans: 'IBM Plex Sans', sans-serif;
     }
   }
 }
+/* 
+
+  END TOPICS
+
+*/
 
 
 
+/* 
 
-//
-// NOVELTIES
-// 
+  NOVELTIES
+
+*/
 
 .novelties{
   padding: 16px;
@@ -480,11 +528,20 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   }
 }
 
+/* 
+
+  END NOVELTIES
+
+*/
 
 
-//
-// FOOTER
-// 
+
+
+/* 
+
+  FOOTER
+
+*/
 .footer-section{
   position: relative;
   z-index: 10;
@@ -514,6 +571,11 @@ $font-sans: 'IBM Plex Sans', sans-serif;
     }
   }
 }
+/* 
+
+  END FOOTER
+
+*/
 
 
 
@@ -525,16 +587,18 @@ $font-sans: 'IBM Plex Sans', sans-serif;
 
 
 
+/* 
 
-// 
-//VISTA TABLET
-//
+  VISTA TABLET
 
+*/
 @media (min-width:771px){
 
-//
-// MENU AND HEADER
-// 
+/* 
+
+  MENU AND HEADER
+
+*/
 .header{
   align-items: center;
   height: 80px;
@@ -584,13 +648,18 @@ $font-sans: 'IBM Plex Sans', sans-serif;
     }
   }
 }
+/* 
+
+  END MENU AND HEADER
+
+*/
 
 
+/* 
 
-//
-// WELCOME
-// 
+  WELCOME
 
+*/
 .welcome{
   margin-left: 80px;
   
@@ -621,14 +690,19 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   }
   
 }
+/* 
+
+  END WELCOME
+
+*/
 
 
 
+/* 
 
-//
-// EPISODES
-//
+  EPISODES
 
+*/
 .episodes{
   padding: 15px;
   
@@ -667,13 +741,18 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   } 
 }
 
+/* 
+
+  END EPISODES
+
+*/
 
 
+/* 
 
-//
-// ORIGIN
-// 
+  ORIGIN
 
+*/
 
 .origin{
   margin-bottom: 0px;
@@ -704,12 +783,18 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   }
 }
 
+/* 
+
+  END ORIGIN
+
+*/
 
 
+/* 
 
-//
-// INTERVIEWS
-// 
+  INTERVIEWS
+
+*/
 .interviews{
   
   .title{
@@ -729,14 +814,18 @@ $font-sans: 'IBM Plex Sans', sans-serif;
 
   }
 }
+/* 
+
+  END INTERVIEWS
+
+*/
 
 
+/* 
 
+  TOPICS
 
-//
-// TOPICS
-// 
-
+*/
 .topics{
   .title{
     font-size: 40px;
@@ -759,12 +848,16 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   }
 }
 
+/* 
 
+  END TOPICS
 
+*/
+/* 
 
-// 
-// NOVELTIES
-// 
+  NOVELTIES
+
+*/
 .novelties{
   margin-bottom: -5px;
   display: flex;
@@ -794,12 +887,16 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   }
 }
 
+/* 
 
+  END NOVELTIES
 
+*/
+/* 
 
-//
-// FOOTER
-// 
+  FOOTER
+
+*/
 .footer-section{
   width: 100%;
   height: 120px;
@@ -822,23 +919,35 @@ $font-sans: 'IBM Plex Sans', sans-serif;
     }
   }
 }
+/* 
 
+  END FOOTER
+
+*/
 }
 
 
 
+/* 
+
+  END VISTA TABLET
+
+*/
 
 
-// 
-//DESKTOP VIEW
-//
 
+/* 
+
+  DESKTOP VIEW
+
+*/
 @media (min-width:1440px){
 
-//
-// MENU AND HEADER
-//
+/* 
 
+    MENU AND HEADER
+
+*/
   .header{
   
     .logo{
@@ -863,11 +972,16 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   }
 
 
+  /* 
 
+    END MENU AND HEADER
 
-//
-// WELCOME
-// 
+  */
+  /* 
+
+    WELCOME
+
+  */
 .welcome{
   margin-left: 200px;
   
@@ -890,13 +1004,16 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   }
 }
 
+  /* 
 
+    END WELCOME
 
+  */
+  /* 
 
-//
-// EPISODES
-//
+    EPISODES
 
+  */
 .episodes{
   padding: 11px;
 
@@ -920,14 +1037,16 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   } 
 }
 
+  /* 
 
+    END EPISODES
 
+  */
+  /* 
 
+    ORIGIN
 
-//
-// ORIGIN
-// 
-
+  */
 
 .origin{
 
@@ -955,12 +1074,16 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   }
 }
 
+/* 
 
+  END ORIGIN
 
+*/
+/* 
 
-//
-// INTERVIEWS
-// 
+  INTERVIEWS
+
+*/
 .interviews{
   
   .title{
@@ -980,13 +1103,16 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   }
 }
 
+  /* 
 
+    END INTERVIEWS
 
+  */
+  /* 
 
-//
-// TOPICS
-// 
+    TOPICS
 
+  */
 .topics{
   .title{
     font-size: 48px;
@@ -1005,11 +1131,16 @@ $font-sans: 'IBM Plex Sans', sans-serif;
 }
 
 
+  /* 
 
+    END TOPICS
 
-// 
-// NOVELTIES
-// 
+  */
+  /* 
+
+    NOVELTIES
+
+  */
 .novelties{
 
   .title{
@@ -1024,12 +1155,16 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   }
 }
 
+/* 
 
+  END NOVELTIES
 
+*/
+/* 
 
-//
-// FOOTER
-// 
+  FOOTER
+
+*/
 .footer-section{
   height: 130px;
   flex-direction: row;
@@ -1043,5 +1178,16 @@ $font-sans: 'IBM Plex Sans', sans-serif;
   
   }
 }
+/* 
+
+  END FOOTER
+
+*/
 
 }
+
+/* 
+
+  END DESKTOP VIEW
+
+*/

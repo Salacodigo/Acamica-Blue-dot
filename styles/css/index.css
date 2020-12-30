@@ -1,3 +1,8 @@
+/*  
+
+  Delete default styles
+
+*/
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600&display=swap");
 * {
@@ -16,6 +21,16 @@ body {
   margin: 0 auto;
 }
 
+/*  
+
+  VARIABLES
+
+*/
+/* 
+
+  MENU AND HEADER
+
+*/
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -130,6 +145,16 @@ body {
   color: #060A24;
 }
 
+/* 
+
+  END MENU AND HEADER
+
+*/
+/* 
+
+  WELCOME
+
+*/
 .welcome {
   padding: 16px;
 }
@@ -175,6 +200,16 @@ body {
   cursor: pointer;
 }
 
+/* 
+
+  END WELCOME
+
+*/
+/* 
+
+  EPISODES
+
+*/
 .episodes {
   padding: 11px;
 }
@@ -215,6 +250,16 @@ body {
   margin-bottom: 110px;
 }
 
+/* 
+
+  END EPISODES
+
+*/
+/* 
+
+  ORIGIN
+
+*/
 .origin {
   margin-bottom: -30px;
   display: flex;
@@ -251,6 +296,16 @@ body {
   font-weight: 300;
 }
 
+/* 
+
+  END ORIGIN
+
+*/
+/* 
+
+  INTERVIEWS
+
+*/
 .interviews .title {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
@@ -269,6 +324,16 @@ body {
   margin-bottom: -1px;
 }
 
+/* 
+
+  END INTERVIEWS
+
+*/
+/* 
+
+  TOPICS
+
+*/
 .topics .title {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
@@ -299,6 +364,16 @@ body {
   margin: 0px 16px 52px 16px;
 }
 
+/* 
+
+  END TOPICS
+
+*/
+/* 
+
+  NOVELTIES
+
+*/
 .novelties {
   padding: 16px;
   margin-bottom: -15px;
@@ -351,6 +426,16 @@ body {
   cursor: pointer;
 }
 
+/* 
+
+  END NOVELTIES
+
+*/
+/* 
+
+  FOOTER
+
+*/
 .footer-section {
   position: relative;
   z-index: 10;
@@ -377,7 +462,22 @@ body {
   margin: 0px 19px 31px;
 }
 
+/* 
+
+  END FOOTER
+
+*/
+/* 
+
+  VISTA TABLET
+
+*/
 @media (min-width: 771px) {
+  /* 
+
+    MENU AND HEADER
+
+  */
   .header {
     align-items: center;
     height: 80px;
@@ -417,6 +517,16 @@ body {
     margin-right: 35px;
   }
 
+  /* 
+
+    END MENU AND HEADER
+
+  */
+  /* 
+
+    WELCOME
+
+  */
   .welcome {
     margin-left: 80px;
   }
@@ -443,6 +553,16 @@ body {
     margin-bottom: 5px;
   }
 
+  /* 
+
+    END WELCOME
+
+  */
+  /* 
+
+    EPISODES
+
+  */
   .episodes {
     padding: 15px;
   }
@@ -471,6 +591,16 @@ body {
     margin-bottom: -60px;
   }
 
+  /* 
+
+    END EPISODES
+
+  */
+  /* 
+
+    ORIGIN
+
+  */
   .origin {
     margin-bottom: 0px;
   }
@@ -494,6 +624,16 @@ body {
     width: 320px;
   }
 
+  /* 
+
+    END ORIGIN
+
+  */
+  /* 
+
+    INTERVIEWS
+
+  */
   .interviews .title {
     font-size: 40px;
     line-height: 50px;
@@ -508,6 +648,16 @@ body {
     height: 50%;
   }
 
+  /* 
+
+    END INTERVIEWS
+
+  */
+  /* 
+
+    TOPICS
+
+  */
   .topics .title {
     font-size: 40px;
     line-height: 50px;
@@ -525,6 +675,16 @@ body {
     margin-bottom: 16px;
   }
 
+  /* 
+
+    END TOPICS
+
+  */
+  /* 
+
+    NOVELTIES
+
+  */
   .novelties {
     margin-bottom: -5px;
     display: flex;
@@ -546,6 +706,16 @@ body {
     margin-bottom: 55px;
   }
 
+  /* 
+
+    END NOVELTIES
+
+  */
+  /* 
+
+    FOOTER
+
+  */
   .footer-section {
     width: 100%;
     height: 120px;
@@ -564,8 +734,29 @@ body {
     width: 18px;
     margin: 36px 19px 31px;
   }
+
+  /* 
+
+    END FOOTER
+
+  */
 }
+/* 
+
+  END VISTA TABLET
+
+*/
+/* 
+
+  DESKTOP VIEW
+
+*/
 @media (min-width: 1440px) {
+  /* 
+
+      MENU AND HEADER
+
+  */
   .header .logo {
     margin: 22px 100px;
   }
@@ -576,6 +767,16 @@ body {
     margin-right: 100px;
   }
 
+  /* 
+
+    END MENU AND HEADER
+
+  */
+  /* 
+
+    WELCOME
+
+  */
   .welcome {
     margin-left: 200px;
   }
@@ -592,6 +793,16 @@ body {
     margin-top: 56px;
   }
 
+  /* 
+
+    END WELCOME
+
+  */
+  /* 
+
+    EPISODES
+
+  */
   .episodes {
     padding: 11px;
   }
@@ -610,6 +821,16 @@ body {
     margin-bottom: 53px;
   }
 
+  /* 
+
+    END EPISODES
+
+  */
+  /* 
+
+    ORIGIN
+
+  */
   .origin .img-origin {
     width: 457.6px;
     height: 742.5px;
@@ -629,6 +850,16 @@ body {
     width: 464px;
   }
 
+  /* 
+
+    END ORIGIN
+
+  */
+  /* 
+
+    INTERVIEWS
+
+  */
   .interviews .title {
     font-size: 48px;
     line-height: 62px;
@@ -639,6 +870,16 @@ body {
     height: 33.3%;
   }
 
+  /* 
+
+    END INTERVIEWS
+
+  */
+  /* 
+
+    TOPICS
+
+  */
   .topics .title {
     font-size: 48px;
     line-height: 62px;
@@ -651,6 +892,16 @@ body {
     width: 260px;
   }
 
+  /* 
+
+    END TOPICS
+
+  */
+  /* 
+
+    NOVELTIES
+
+  */
   .novelties .title {
     font-size: 48px;
     line-height: 62px;
@@ -660,6 +911,16 @@ body {
     margin-bottom: 139px;
   }
 
+  /* 
+
+    END NOVELTIES
+
+  */
+  /* 
+
+    FOOTER
+
+  */
   .footer-section {
     height: 130px;
     flex-direction: row;
@@ -670,6 +931,17 @@ body {
   .footer-section .icon-container {
     margin-right: 81px;
   }
+
+  /* 
+
+    END FOOTER
+
+  */
 }
+/* 
+
+  END DESKTOP VIEW
+
+*/
 
 /*# sourceMappingURL=index.css.map */
