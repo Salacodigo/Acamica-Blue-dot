@@ -6,8 +6,6 @@
 
 Landing page for a podcast.
 
-Proyecto realizado en sprint 1 de la ruta de aprendizaje para Desarrollador Fullstack en Acámica.
-
 Project made in sprint 1 of the learning path for Fullstack-Developer in Acámica.
 
 Technologies used:
@@ -44,8 +42,6 @@ $sass --watch sass:css
 
 
 ## Branchs
-
-Master branch it is use to in 
 
 The master branch is the one deployed with the GitHub Pages service
 
