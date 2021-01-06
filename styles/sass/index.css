@@ -11,7 +11,7 @@
   padding: 0;
   text-decoration: none;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -37,10 +37,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 44px;
   width: 100%;
   background-color: #FFFFFF;
@@ -60,8 +60,8 @@ body {
 .header .menu-box {
   margin: 16px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .menu-box #menu-drop {
@@ -101,7 +101,7 @@ body {
 .header .menu-box .label-menu .menu-bar::after, .header .menu-box .label-menu .menu-bar::before {
   position: absolute;
   display: block;
-  content: "";
+  content: '';
   width: 18px;
   height: 2px;
   background: #060A24;
@@ -119,7 +119,7 @@ body {
   width: 14px;
   height: 3px;
   -webkit-transform: skew(0, 45deg);
-  transform: skew(0, 45deg);
+          transform: skew(0, 45deg);
   background-color: #060A24;
   border-radius: 5px;
 }
@@ -127,7 +127,7 @@ body {
 .header .menu-box .label-menu .menu-xbottom {
   top: -3px;
   -webkit-transform: skew(0, -45deg);
-  transform: skew(0, -45deg);
+          transform: skew(0, -45deg);
 }
 
 .header .menu-box .label-menu:hover {
@@ -186,32 +186,27 @@ body {
 @media (min-width: 771px) {
   .header {
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 80px;
   }
-
   .header .logo {
     margin: 22px 70px;
     width: 36px;
     height: 36px;
   }
-
   .header .menu-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 0;
   }
-
   .header .menu-box #menu-drop {
     display: none;
   }
-
   .header .menu-box .label-menu {
     display: none;
   }
-
   .header .menu-box .list-menu {
     position: relative;
     top: 0;
@@ -222,7 +217,6 @@ body {
     display: flex;
     height: 80px;
   }
-
   .header .menu-box .list-menu .link-menu {
     position: relative;
     line-height: 28px;
@@ -231,11 +225,9 @@ body {
     background-color: #FFFFFF;
     opacity: 1;
   }
-
   .header .menu-box .list-menu :last-child {
     margin-right: 35px;
   }
-
   /* 
     END MENU AND HEADER TABLET
   */
@@ -243,23 +235,22 @@ body {
     MENU AND HEADER DESKTOP
   */
 }
+
 @media (min-width: 771px) and (min-width: 1440px) {
   .header .logo {
     margin: 22px 100px;
   }
-
   .header .menu-box .list-menu .link-menu {
     margin: 26px 24px;
   }
-
   .header .menu-box .list-menu :last-child {
     margin-right: 100px;
   }
-
   /* 
       END MENU AND HEADER DESKTOP
     */
 }
+
 /*
   END MENU AND HEADER
 */
@@ -308,8 +299,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #060A24;
   background: #00F0B8;
   border: none;
@@ -338,24 +329,20 @@ body {
   .welcome {
     margin-left: 80px;
   }
-
   .welcome .title {
     margin-top: 40px;
     margin-bottom: 8px;
     font-size: 50px;
     line-height: 60px;
   }
-
   .welcome .title .slice {
     display: inline;
   }
-
   .welcome .paragraph {
     font-size: 16px;
     line-height: 24px;
     width: 400px;
   }
-
   .welcome .button {
     font-size: 18px;
     line-height: 24px;
@@ -365,6 +352,7 @@ body {
     margin-bottom: 5px;
   }
 }
+
 /* 
   END WELCOME TABLET
 */
@@ -375,22 +363,20 @@ body {
   .welcome {
     margin-left: 200px;
   }
-
   .welcome .title {
     margin-top: 120px;
     margin-bottom: 0px;
     font-size: 64px;
     line-height: 84px;
   }
-
   .welcome .paragraph {
     width: 626px;
   }
-
   .welcome .button {
     margin-top: 56px;
   }
 }
+
 /* 
   END WELCOME DESKTOP
 */
@@ -415,14 +401,14 @@ body {
   display: block;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   z-index: 0;
   top: 0;
   left: 0;
   -webkit-transform: skew(0, -5deg);
-  transform: skew(0, -5deg);
+          transform: skew(0, -5deg);
 }
 
 .episodes .title {
@@ -459,11 +445,9 @@ body {
   .episodes {
     padding: 15px;
   }
-
   .episodes.background-skewed::after {
     top: 60px;
   }
-
   .episodes .title {
     margin-top: 100px;
     margin-left: 100px;
@@ -471,27 +455,25 @@ body {
     font-size: 48px;
     line-height: 62px;
   }
-
   .episodes .tracks {
     -ms-flex-item-align: center;
-    align-self: center;
+        align-self: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     margin: 0px 0px 0px 15px;
   }
-
   .episodes .tracks .podcast {
     margin-right: 25px;
     margin-bottom: 25px;
     width: 584px;
   }
-
   .episodes :last-child {
     margin-bottom: -60px;
   }
 }
+
 /* 
   END EPISODES TABLET
 */
@@ -502,25 +484,22 @@ body {
   .episodes {
     padding: 11px;
   }
-
   .episodes .title {
     margin-top: 186px;
     margin-left: 200px;
   }
-
   .episodes .tracks {
     margin-left: 17px;
   }
-
   .episodes .tracks .podcast {
     margin-left: 72px;
     margin-bottom: 72px;
   }
-
   .episodes :last-child {
     margin-bottom: 53px;
   }
 }
+
 /* 
   END EPISODES DESKTOP
 */
@@ -539,11 +518,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   z-index: 10;
 }
 
@@ -588,30 +567,27 @@ body {
   .origin {
     margin-bottom: 0px;
   }
-
   .origin .img-origin {
     width: 300px;
     height: 486.5px;
     top: 0px;
     margin: 0px 10px 0px 45px;
   }
-
   .origin .origin-container {
     top: 90px;
   }
-
   .origin .origin-container .title {
     font-size: 40px;
     line-height: 50px;
     margin-bottom: 24px;
   }
-
   .origin .origin-container .paragraph {
     font-size: 14px;
     line-height: 24px;
     width: 320px;
   }
 }
+
 /* 
   END ORIGIN TABLET
 */
@@ -625,22 +601,20 @@ body {
     top: -50px;
     margin: 0px 62.4px 0px 0px;
   }
-
   .origin .origin-container {
     top: 170px;
   }
-
   .origin .origin-container .title {
     font-size: 48px;
     line-height: 62px;
     color: #060A24;
   }
-
   .origin .origin-container .paragraph {
     font-size: 16px;
     width: 464px;
   }
 }
+
 /* 
   END ORIGIN DESKTOP
 */
@@ -668,8 +642,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .interviews .img-container .img-box {
@@ -690,21 +664,20 @@ body {
     line-height: 50px;
     margin: 50px 0px 36px 100px;
   }
-
   .interviews .img-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-
   .interviews .img-container .img-box {
     width: 50%;
     height: 50%;
   }
 }
+
 /* 
   END INTERVIEWS TABLET
 */
@@ -717,12 +690,12 @@ body {
     line-height: 62px;
     margin: 0px 0px 36px 200px;
   }
-
   .interviews .img-container .img-box {
     width: 33.3%;
     height: 33.3%;
   }
 }
+
 /* 
   END INTERVIEWS DESKTOP
 */
@@ -750,8 +723,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .topics .topic-container .card {
@@ -760,14 +733,14 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .topics .topic-container .card .img-topic {
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 13px 0px;
 }
 
@@ -793,27 +766,25 @@ body {
     line-height: 50px;
     margin: 50px 0px 56px 90px;
   }
-
   .topics .topic-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-
   .topics .topic-container .card {
     width: 40%;
   }
-
   .topics .topic-container .card .img-topic {
     margin-bottom: 16px;
   }
 }
+
 /* 
   END TOPICS TABLET
 */
@@ -826,16 +797,15 @@ body {
     line-height: 62px;
     margin: 64px 0px 56px 200px;
   }
-
   .topics .topic-container {
     -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
-
   .topics .topic-container .card {
     width: 260px;
   }
 }
+
 /* 
   END TOPICS DESKTOP
 */
@@ -861,14 +831,14 @@ body {
   display: block;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   z-index: 0;
   top: 0px;
   left: 0;
   -webkit-transform: skew(0, -5deg);
-  transform: skew(0, -5deg);
+          transform: skew(0, -5deg);
 }
 
 .novelties .title {
@@ -922,31 +892,29 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   .novelties.background-skewed::after {
     top: 60px;
     -webkit-transform: skew(0, -6.1 deg);
-    transform: skew(0, -6.1 deg);
+            transform: skew(0, -6.1 deg);
   }
-
   .novelties .title {
     font-size: 40px;
     line-height: 50px;
     margin: 140px 0px 36px 0px;
   }
-
   .novelties .button {
     width: 345px;
     height: 56px;
     margin-bottom: 55px;
   }
 }
+
 /* 
   END NOVELTIES TABLET
 */
@@ -959,11 +927,11 @@ body {
     line-height: 62px;
     margin: 197px 0px 36px 0px;
   }
-
   .novelties .button {
     margin-bottom: 139px;
   }
 }
+
 /* 
   END NOVELTIES DESKTOP
 */
@@ -984,11 +952,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #FFFFFF;
 }
 
@@ -1026,28 +994,26 @@ body {
     height: 120px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-
   .footer-section .footer-text {
     font-size: 16px;
     line-height: 28px;
     margin: 36px 0px 31px 50px;
   }
-
   .footer-section .icon-container {
     margin-right: 30px;
   }
-
   .footer-section .icon-container .fab {
     width: 18px;
     margin: 36px 19px 31px;
   }
 }
+
 /* 
   END FOOTER TABLET
 */
@@ -1059,24 +1025,21 @@ body {
     height: 130px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-
   .footer-section .footer-text {
     margin: 36px 0px 31px 100px;
   }
-
   .footer-section .icon-container {
     margin-right: 81px;
   }
 }
+
 /* 
   END FOOTER DESKTOP
 */
 /* 
   END FOOTER
 */
-/*# sourceMappingURL=index.css.map */
-
 /*# sourceMappingURL=index.css.map */
