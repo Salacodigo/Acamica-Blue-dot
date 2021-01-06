@@ -18,11 +18,6 @@ a {
   text-decoration: none;
 }
 
-body {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
 /*  
   END Delete default styles
 */
@@ -439,13 +434,18 @@ body {
   z-index: 10;
 }
 
-.episodes .tracks .podcast {
+.episodes .episodes-container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.episodes .episodes-container .tracks .podcast {
   position: relative;
   z-index: 10;
   margin-bottom: 11px;
 }
 
-.episodes .tracks .podcast.last-audio {
+.episodes .episodes-container .tracks .podcast.last-audio {
   margin-bottom: 110px;
 }
 
@@ -464,7 +464,7 @@ body {
     top: 60px;
   }
 
-  .episodes .title {
+  .episodes .episodes-container .title {
     margin-top: 100px;
     margin-left: 100px;
     margin-bottom: 26px;
@@ -472,7 +472,7 @@ body {
     line-height: 62px;
   }
 
-  .episodes .tracks {
+  .episodes .episodes-container .tracks {
     -ms-flex-item-align: center;
     align-self: center;
     display: -webkit-box;
@@ -482,13 +482,13 @@ body {
     margin: 0px 0px 0px 15px;
   }
 
-  .episodes .tracks .podcast {
+  .episodes .episodes-container .tracks .podcast {
     margin-right: 25px;
     margin-bottom: 25px;
     width: 584px;
   }
 
-  .episodes :last-child {
+  .episodes .episodes-container :last-child {
     margin-bottom: -60px;
   }
 }
@@ -508,16 +508,16 @@ body {
     margin-left: 200px;
   }
 
-  .episodes .tracks {
+  .episodes .episodes-container .tracks {
     margin-left: 17px;
   }
 
-  .episodes .tracks .podcast {
+  .episodes .episodes-container .tracks .podcast {
     margin-left: 72px;
     margin-bottom: 72px;
   }
 
-  .episodes :last-child {
+  .episodes .episodes-container :last-child {
     margin-bottom: 53px;
   }
 }
