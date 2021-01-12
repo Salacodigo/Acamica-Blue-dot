@@ -342,6 +342,7 @@ button {
 */
 .episodes {
   padding: 11px;
+  border: 2px solid red;
 }
 .episodes.background-skewed {
   position: relative;
@@ -467,7 +468,7 @@ button {
 .origin .img-origin {
   position: relative;
   width: 360px;
-  height: 519px;
+  height: auto;
   top: -75px;
   margin-bottom: 27px;
 }

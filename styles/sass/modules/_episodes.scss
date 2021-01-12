@@ -3,7 +3,7 @@
 */
 .episodes{
   padding: 11px;
-  
+  border: 2px solid red;
   &.background-skewed{
     position: relative;
     &::after{
@@ -41,7 +41,7 @@
     max-width: 1440px;
 
     .tracks{
-  
+
       .podcast{
         position: relative;
         z-index: 10;
