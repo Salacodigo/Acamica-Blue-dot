@@ -342,7 +342,6 @@ button {
 */
 .episodes {
   padding: 11px;
-  border: 2px solid red;
 }
 .episodes.background-skewed {
   position: relative;
