@@ -58,10 +58,10 @@ button {
   position: absolute;
 }
 .header .menu-box #menu-drop:checked ~ .label-menu .menu-bar {
-  visibility: hidden;
+  display: none;
 }
-.header .menu-box #menu-drop:checked ~ .label-menu .menu-xtop, .header .menu-box #menu-drop:checked ~ .label-menu .menu-xbottom {
-  visibility: visible;
+.header .menu-box #menu-drop:checked ~ .label-menu .menu-x {
+  display: inline;
 }
 .header .menu-box #menu-drop:checked ~ .list-menu {
   visibility: visible;
@@ -74,36 +74,10 @@ button {
 }
 .header .menu-box .label-menu .menu-bar {
   position: relative;
-  width: 18px;
-  height: 2px;
-  background-color: #060A24;
-  border-radius: 5px;
 }
-.header .menu-box .label-menu .menu-bar::after, .header .menu-box .label-menu .menu-bar::before {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 18px;
-  height: 2px;
-  background: #060A24;
-  top: 5px;
-  border-radius: 5px;
-}
-.header .menu-box .label-menu .menu-bar::after {
-  top: 10px;
-}
-.header .menu-box .label-menu .menu-xtop, .header .menu-box .label-menu .menu-xbottom {
-  visibility: hidden;
+.header .menu-box .label-menu .menu-x {
+  display: none;
   position: relative;
-  width: 14px;
-  height: 3px;
-  transform: skew(0, 45deg);
-  background-color: #060A24;
-  border-radius: 5px;
-}
-.header .menu-box .label-menu .menu-xbottom {
-  top: -3px;
-  transform: skew(0, -45deg);
 }
 .header .menu-box .label-menu:hover {
   cursor: pointer;
@@ -379,6 +353,8 @@ button {
   position: relative;
   z-index: 10;
   margin-bottom: 11px;
+  border: 0;
+  background-color: transparent;
 }
 .episodes .episodes-container .tracks .podcast.last-audio {
   margin-bottom: 110px;
