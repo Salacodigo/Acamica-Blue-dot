@@ -1,201 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Podcast</title>
-  <link rel="stylesheet" href="./styles/css/index.css">
-  <script src="https://kit.fontawesome.com/980b3d4086.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-
-  <!-- NAVIGATION BAR -->
-  <nav class="header">
-    <div class="logo">
-      <a href="#welcome"> 
-        <img  src="./images/logo.svg" alt="Logo" class="img-logo">
-      </a>
-    </div>
-    <div class="menu-box">
-      <input type="checkbox" id="menu-drop">
-      <label for="menu-drop" class="label-menu">
-        <div class="menu-bar"></div>
-        <div class="menu-xtop"></div>
-        <div class="menu-xbottom"></div>
-      </label>
-      <div class="list-menu">
-        <a href="#episodes" class="link-menu">Episodios</a>
-        <a href="#origin" class="link-menu">Nosotros</a>
-        <a href="#interviews" class="link-menu">Entrevistas</a>
-        <a href="#topics" class="link-menu">Tópicos</a>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast</title>
+    <link rel="stylesheet" href="./styles/css/index.css">
+    <script src="https://kit.fontawesome.com/980b3d4086.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav class="header">
+      <div class="logo">
+        <a href="#welcome"> 
+          <img  src="./images/logo.svg" alt="Logo" class="img-logo">
+        </a>
       </div>
-    </div>
-  </nav>
-  <!-- END NAVIGATION BAR -->
-  
-
-  <!-- WELCOME SECTION -->
-  <section class="welcome" id="welcome">
-    <h1 class="title">
-      <span class="slice">Hello 
-        <span class="
-          strikethrough">world</span>
-        </span>
-      <span class="slice"> pale blue dot.</span>
-    </h1>
-    <p class="paragraph">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
-
-    <button class="button"> Conocé más</button>
-    
-  </section>
-  <!-- END WELCOME SECTION -->
-
-
-  <!-- EPISODES SECTION -->
-  <section class="episodes background-skewed" id="episodes">
-    <div class="episodes-container">
-      <h1 class="title">Episodios</h1>
-
-      <div class="tracks">
-
-        <iframe class="podcast" src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
-        <iframe class="podcast" src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
+      <div class="menu-box">
+        <input type="checkbox" id="menu-drop">
+        <label for="menu-drop" class="label-menu">
+          <span class="menu-bar"><i class="fas fa-bars"></i></span>
+          <span class="menu-x"><i class="fas fa-times"></i></span>
+        </label>
+        <div class="list-menu">
+          <a href="#episodes" class="link-menu">Episodios</a>
+          <a href="#origin" class="link-menu">Nosotros</a>
+          <a href="#interviews" class="link-menu">Entrevistas</a>
+          <a href="#topics" class="link-menu">Tópicos</a>
+        </div>
       </div>
-      <div class="tracks">
-
-        <iframe class="podcast" src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
-        <iframe class="podcast last-audio" src="https://open.spotify.com/embed-podcast/episode/2fhkFnD3Yl40MlWFLNyv0g" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        
+    </nav>
+    <!-- END NAVIGATION BAR -->
+    <!-- WELCOME SECTION -->
+    <section class="welcome" id="welcome">
+      <h1 class="title">
+        <span class="slice">Hello 
+          <span class="
+            strikethrough">world</span>
+          </span>
+        <span class="slice"> pale blue dot.</span>
+      </h1>
+      <p class="paragraph">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
+      <button class="button"> Conocé más</button>
+    </section>
+    <!-- END WELCOME SECTION -->
+    <!-- EPISODES SECTION -->
+    <section class="episodes background-skewed" id="episodes">
+      <div class="episodes-container">
+        <h1 class="title">Episodios</h1>
+        <div class="tracks">
+          <iframe class="podcast" src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="100%" height="232" allow="encrypted-media"></iframe>
+          <iframe class="podcast" src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="100%" height="232"  allow="encrypted-media"></iframe>
+        </div>
+        <div class="tracks">
+          <iframe class="podcast" src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="100%" height="232" allow="encrypted-media"></iframe>
+          <iframe class="podcast last-audio" src="https://open.spotify.com/embed-podcast/episode/7h3hED0Fb2FN3xg709Y0rL" width="100%" height="232" allow="encrypted-media"></iframe>
+        </div>
       </div>
-    </div>
-  </section>
-  
-  <!-- END EPISODES SECTION -->
-  
-
-
-  
-  
-  <!-- ORIGIN SECTION -->
-  
-  <section class="origin" id="origin">
-    <img class="img-origin" src="./images/phone.png" alt="The secret story of women in coding">
-    <div class="origin-container">
-      <h1 class="title">De dónde venimos</h1>
-      <p class="paragraph">
-        Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
-        <br>
-        <br>
-        Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
-      </p>
-    </div>
-
-  </section>
-    
-  <!-- ORIGIN SECTION -->
-  
-
-
-  
-  <!-- INTERVIEWS SECTION -->
-  
-  <section class="interviews" id="interviews">
-    <h1 class="title">Invitadas/os estelares</h1>
-    <div class="img-container">
-      <img class="img-box" src="./images/grace-hopper.png" alt="grace hopper">
-
-      <img class="img-box" src="./images/Katie-Bouman.png" alt="Katie-Bouman">
-
-      <img class="img-box" src="./images/Margaret_Hamilton.png" alt="Margaret_Hamilton">
-
-      <img class="img-box" src="./images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="An E.R.A.Univac 1103 computer in the 1950s">
-
-      <img class="img-box" src="./images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer">
-
-      <img class="img-box" src="./images/susan-kare.png" alt="susan-kare">
-    </div>
-  </section>
-  
-  <!-- END INTERVIEWS SECTION -->
-  
-
-
-
-  
-  <!-- TOPICS SECTION -->
-  
-  <section class="topics" id="topics">
-    <h1 class="title">Algunos de nuestros temas</h1>
-    <div class="topic-container">
-      <div class="card">
-        <img class="img-topic" src="./images/icon1.svg" alt="Trabajo remoto">
-        <h2 class="subtitle">Trabajo remoto</h2>
+    </section>
+    <!-- END EPISODES SECTION -->
+    <!-- ORIGIN SECTION -->
+    <section class="origin" id="origin">
+      <img class="img-origin" src="./images/phone.png" alt="The secret story of women in coding">
+      <div class="origin-container">
+        <h1 class="title">De dónde venimos</h1>
+        <p class="paragraph">
+          Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
+          <br>
+          <br>
+          Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+        </p>
       </div>
-
-      <div class="card">
-        <img class="img-topic" src="./images/icon2.svg" alt="Repensando la programación">
-        <h2 class="subtitle">Repensando la programación</h2>
+    </section>
+    <!-- ORIGIN SECTION -->
+    <!-- INTERVIEWS SECTION -->
+    <section class="interviews" id="interviews">
+      <h1 class="title">Invitadas/os estelares</h1>
+      <div class="img-container">
+        <img class="img-box" src="./images/grace-hopper.png" alt="grace hopper">
+        <img class="img-box" src="./images/Katie-Bouman.png" alt="Katie-Bouman">
+        <img class="img-box" src="./images/Margaret_Hamilton.png" alt="Margaret_Hamilton">
+        <img class="img-box" src="./images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="An E.R.A.Univac 1103 computer in the 1950s">
+        <img class="img-box" src="./images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer">
+        <img class="img-box" src="./images/susan-kare.png" alt="susan-kare">
       </div>
-
-      <div class="card">
-        <img class="img-topic" src="./images/icon3.svg" alt="Bases del código">
-        <h2 class="subtitle">Bases del código</h2>
+    </section>
+    <!-- END INTERVIEWS SECTION -->
+    <!-- TOPICS SECTION -->
+    <section class="topics" id="topics">
+      <h1 class="title">Algunos de nuestros temas</h1>
+      <div class="topic-container">
+        <div class="card">
+          <img class="img-topic" src="./images/icon1.svg" alt="Trabajo remoto">
+          <h2 class="subtitle">Trabajo remoto</h2>
+        </div>
+        <div class="card">
+          <img class="img-topic" src="./images/icon2.svg" alt="Repensando la programación">
+          <h2 class="subtitle">Repensando la programación</h2>
+        </div>
+        <div class="card">
+          <img class="img-topic" src="./images/icon3.svg" alt="Bases del código">
+          <h2 class="subtitle">Bases del código</h2>
+        </div>
+        <div class="card">
+          <img class="img-topic" src="./images/icon4.svg" alt="Seguridad informática">
+          <h2 class="subtitle">Seguridad informática</h2>
+        </div>
       </div>
-
-      <div class="card">
-        <img class="img-topic" src="./images/icon4.svg" alt="Seguridad informática">
-        <h2 class="subtitle">Seguridad informática</h2>
+    </section>  
+    <!-- END TOPICS SECTION -->
+    <!-- NOVELTIES SECTION -->
+    <section class="novelties background-skewed">
+      <h1 class="title">¿Querés las últimas novedades?</h1>
+      <button class="button">Escuchá los episodios</button>
+    </section>
+    <!-- END NOVELTIES SECTION -->
+    <!-- FOOTER SECTION -->
+    <footer class="footer-section">
+      <p class="footer-text">© 2019- Hello blue pale dot</p>
+      <div class="icon-container">
+        <a href="https://open.spotify.com/episode/7AZZy2nJ4R9ZndHW0h2yxt" target="_blank"><i class="fab fa-spotify"></i></a>
+        <a href="https://www.instagram.com/acamica/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/acamica_com?lang=es" target="_blank"> <i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/Acamica.org/" target="_blank"> <i class="fab fa-facebook"></i> </a>
+        <a href="https://web.telegram.org/#/login" target="_blank"> <i class="fab fa-telegram"></i> </a>
       </div>
-    </div>
-
-    
-  </section>
-
-  
-  <!-- END TOPICS SECTION -->
-  
-
-
-
-  
-  <!-- NOVELTIES SECTION -->
-  
-  <section class="novelties background-skewed">
-    <h1 class="title">¿Querés las últimas novedades?</h1>
-
-    <button class="button">Escuchá los episodios</button>
-
-  </section>
-  
-  <!-- END NOVELTIES SECTION -->
-  
-
-
-
-  
-  <!-- FOOTER SECTION -->
-  
-  <footer class="footer-section">
-    <p class="footer-text">© 2019- Hello blue pale dot</p>
-    <div class="icon-container">
-      <a href="https://open.spotify.com/episode/7AZZy2nJ4R9ZndHW0h2yxt"><i class="fab fa-spotify"></i></a>
-
-      <a href="https://www.instagram.com/acamica/?hl=es-la"><i class="fab fa-instagram"></i></a>
-
-      <a href="https://twitter.com/acamica_com?lang=es"> <i class="fab fa-twitter"></i></a>
-
-      <a href="https://www.facebook.com/Acamica.org/"> <i class="fab fa-facebook"></i> </a>
-
-      <a href="https://web.telegram.org/#/login"> <i class="fab fa-telegram"></i> </a>
-
-    </div>
-  </footer>
-  
-  <!-- END FOOTER SECTION --> 
-  
-</body>
+    </footer>
+    <!-- END FOOTER SECTION --> 
+  </body>
 </html>

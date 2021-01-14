@@ -24,7 +24,6 @@
     margin: 16px;
     align-items: center;
     
-    
     #menu-drop{
       height: 12px;
       width: 20px;
@@ -34,10 +33,10 @@
     #menu-drop:checked{
       &~.label-menu{
         .menu-bar{
-        visibility: hidden;
+        display: none;
         }
-        .menu-xtop, .menu-xbottom{
-          visibility: visible;
+        .menu-x{
+          display: inline;
         }
       }
       &~.list-menu{
@@ -49,7 +48,6 @@
           opacity: 1;
           line-height: 28px;
           
-          
         }
       }
     }
@@ -58,39 +56,13 @@
 
       .menu-bar{
         position: relative;
-        width: 18px;
-        height: 2px;
-        background-color: $black-text;
-        border-radius: 5px;
-        &::after,
-        &::before {
-          position: absolute;
-          display: block;
-          content: '';
-          width: 18px;
-          height: 2px;
-          background: $black-text;
-          top: 5px;
-          border-radius: 5px;
-        }
-        &::after{
-          top: 10px;
-        }
-      } 
+      }
 
-      .menu-xtop, .menu-xbottom{
-        visibility: hidden;
+      .menu-x{
+        display: none;
         position: relative;
-        width: 14px;
-        height: 3px;
-        transform: skew(0, 45deg);
-        background-color: $black-text;
-        border-radius: 5px;
       }
-      .menu-xbottom{
-        top: -3px;
-        transform: skew(0, -45deg);
-      }
+
     }
     .label-menu:hover{
       cursor: pointer;
