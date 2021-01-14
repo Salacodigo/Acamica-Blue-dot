@@ -5,6 +5,7 @@
 .novelties{
   padding: 16px;
   margin-bottom: -15px;
+  overflow: hidden;
   &.background-skewed{
     position: relative;
     &::after{
@@ -13,9 +14,9 @@
       position: absolute;
       content: '';
       width: 100%;
-      height: 100%;
+      height: 110%;
       z-index: 0;
-      top: 0px;
+      top: 33px;
       left: 0;
       transform: skew(0, -5deg);
       
@@ -32,7 +33,7 @@
     color: $white-podcast;
     font-weight: 300;
     text-align: center;
-    margin: 30px 0px 36px 0px;
+    margin: 50px 0px 36px 0px;
   }
   .button{
     position: relative;
@@ -77,7 +78,7 @@
     &.background-skewed{
       
       &::after{
-        top: 60px;
+        top: 65px;
         transform: skew(0, -6.1 deg);
         
       }
@@ -109,6 +110,14 @@
 @media (min-width:1440px){
 
   .novelties{
+
+    &.background-skewed{
+      
+      &::after{
+        top: 90px;
+        
+      }
+    }
   
     .title{
       font-size: 48px;
