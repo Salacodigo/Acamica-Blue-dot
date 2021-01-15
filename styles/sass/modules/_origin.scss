@@ -21,7 +21,7 @@
   .origin-container{
     position: relative;
     top: -75px;
-    margin: 0px 16px;
+    margin: 0 16px;
   
     .title{
       font-family: $font-sans;
@@ -53,14 +53,14 @@
 @media (min-width:771px){
   
   .origin{
-    margin-bottom: 0px;
+    margin-bottom: 0;
     
   
     .img-origin{
       width: 300px;
       height: 486.5px;
-      top: 0px;
-      margin: 0px 10px 0px 45px;
+      top: 0;
+      margin: 0 10px 0 45px;
   
     }
     .origin-container{
@@ -97,7 +97,7 @@
       width: 457.6px;
       height: 742.5px;
       top: -50px;
-      margin: 0px 62.4px 0px 0px;
+      margin: 0 62.4px 0 0;
   
     }
     .origin-container{

@@ -89,7 +89,7 @@ button {
   visibility: hidden;
   width: 100%;
   background-color: #0000FF;
-  height: 0px;
+  height: 0;
   opacity: 1;
   transition: height 0.25s;
 }
@@ -98,7 +98,7 @@ button {
   font-family: "IBM Plex Mono", monospace;
   text-transform: uppercase;
   font-size: 16px;
-  line-height: 0px;
+  line-height: 0;
   margin: 12px 16px 12px;
   color: #FFFFFF;
   background-color: #0000FF;
@@ -291,7 +291,7 @@ button {
   }
   .welcome .title {
     margin-top: 120px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-size: 64px;
     line-height: 84px;
   }
@@ -355,6 +355,8 @@ button {
   margin-bottom: 11px;
   border: 0;
   background-color: transparent;
+  width: 100%;
+  height: 232px;
 }
 .episodes .episodes-container .tracks .podcast.last-audio {
   margin-bottom: 110px;
@@ -384,7 +386,7 @@ button {
     align-self: center;
     display: flex;
     width: 100%;
-    margin: 0px 0px 0px 15px;
+    margin: 0 0 0 15px;
   }
   .episodes .episodes-container .tracks .podcast {
     margin-right: 25px;
@@ -450,7 +452,7 @@ button {
 .origin .origin-container {
   position: relative;
   top: -75px;
-  margin: 0px 16px;
+  margin: 0 16px;
 }
 .origin .origin-container .title {
   font-family: "IBM Plex Sans", sans-serif;
@@ -476,13 +478,13 @@ button {
 */
 @media (min-width: 771px) {
   .origin {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .origin .img-origin {
     width: 300px;
     height: 486.5px;
-    top: 0px;
-    margin: 0px 10px 0px 45px;
+    top: 0;
+    margin: 0 10px 0 45px;
   }
   .origin .origin-container {
     top: 90px;
@@ -509,7 +511,7 @@ button {
     width: 457.6px;
     height: 742.5px;
     top: -50px;
-    margin: 0px 62.4px 0px 0px;
+    margin: 0 62.4px 0 0;
   }
   .origin .origin-container {
     top: 170px;
@@ -542,7 +544,7 @@ button {
   line-height: 42px;
   color: #060A24;
   font-weight: 400;
-  margin: 0px 16px 14px 16px;
+  margin: 0 16px 14px 16px;
 }
 .interviews .img-container {
   display: flex;
@@ -564,7 +566,7 @@ button {
   .interviews .title {
     font-size: 40px;
     line-height: 50px;
-    margin: 50px 0px 36px 100px;
+    margin: 50px 0 36px 100px;
   }
   .interviews .img-container {
     flex-direction: row;
@@ -585,7 +587,7 @@ button {
   .interviews .title {
     font-size: 48px;
     line-height: 62px;
-    margin: 0px 0px 36px 200px;
+    margin: 0 0 36px 200px;
   }
   .interviews .img-container .img-box {
     width: 33.3%;
@@ -622,7 +624,7 @@ button {
 }
 .topics .topic-container .card .img-topic {
   align-items: center;
-  padding: 13px 0px;
+  padding: 13px 0;
 }
 .topics .topic-container .card .subtitle {
   font-family: "IBM Plex Sans", sans-serif;
@@ -631,7 +633,7 @@ button {
   color: #060A24;
   font-weight: 600;
   text-align: center;
-  margin: 0px 16px 52px 16px;
+  margin: 0 16px 52px 16px;
 }
 
 /* 
@@ -644,7 +646,7 @@ button {
   .topics .title {
     font-size: 40px;
     line-height: 50px;
-    margin: 50px 0px 56px 90px;
+    margin: 50px 0 56px 90px;
   }
   .topics .topic-container {
     flex-direction: row;
@@ -668,7 +670,7 @@ button {
   .topics .title {
     font-size: 48px;
     line-height: 62px;
-    margin: 64px 0px 56px 200px;
+    margin: 64px 0 56px 200px;
   }
   .topics .topic-container {
     flex-wrap: nowrap;
@@ -718,7 +720,7 @@ button {
   color: #FFFFFF;
   font-weight: 300;
   text-align: center;
-  margin: 50px 0px 36px 0px;
+  margin: 50px 0 36px 0;
 }
 .novelties .button {
   position: relative;
@@ -762,7 +764,7 @@ button {
   .novelties .title {
     font-size: 40px;
     line-height: 50px;
-    margin: 140px 0px 36px 0px;
+    margin: 140px 0 36px 0;
   }
   .novelties .button {
     width: 345px;
@@ -783,7 +785,7 @@ button {
   .novelties .title {
     font-size: 48px;
     line-height: 62px;
-    margin: 197px 0px 36px 0px;
+    margin: 197px 0 36px 0;
   }
   .novelties .button {
     margin-bottom: 139px;
@@ -815,7 +817,7 @@ button {
   line-height: 22px;
   color: #060A24;
   font-weight: 300;
-  margin: 24px 0px 16px 0px;
+  margin: 24px 0 16px 0;
 }
 .footer-section .icon-container {
   margin-left: 45px;
@@ -824,7 +826,7 @@ button {
 }
 .footer-section .icon-container .fab {
   width: 16px;
-  margin: 0px 19px 31px;
+  margin: 0 19px 31px;
 }
 
 /* 
@@ -843,7 +845,7 @@ button {
   .footer-section .footer-text {
     font-size: 16px;
     line-height: 28px;
-    margin: 36px 0px 31px 50px;
+    margin: 36px 0 31px 50px;
   }
   .footer-section .icon-container {
     margin-right: 30px;
@@ -865,7 +867,7 @@ button {
     flex-direction: row;
   }
   .footer-section .footer-text {
-    margin: 36px 0px 31px 100px;
+    margin: 36px 0 31px 100px;
   }
   .footer-section .icon-container {
     margin-right: 81px;
