@@ -56,7 +56,7 @@ The graphic resources were provided by [Acámica](https://www.acamica.com)
 
 ## Author
 
-* Santiago Salamanca. [See LinkedIn](www.linkedin.com/in/icivsantiago
+* Santiago Salamanca. [See LinkedIn](www.linkedin.com/in/santiagosalamancadev
 )
 
 
@@ -116,5 +116,5 @@ Los recursos gráficos fueron suministrados por [Acámica](https://www.acamica.c
 
 ## Autor
 
-* Santiago Salamanca. [Ver LinkedIn](www.linkedin.com/in/icivsantiago
+* Santiago Salamanca. [Ver LinkedIn](www.linkedin.com/in/santiagosalamancadev
 )
