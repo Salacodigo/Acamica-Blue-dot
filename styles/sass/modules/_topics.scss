@@ -17,10 +17,11 @@
     .card{
       display: flex;
       flex-direction: column;
+      align-items: center;
       
       .img-topic{
-        align-items: center;
         padding: 13px 0;
+        max-width: 300px;
         
       }
       .subtitle{
@@ -62,7 +63,6 @@
         
         .img-topic{
           margin-bottom: 16px;
-  
         }
       }
     }
